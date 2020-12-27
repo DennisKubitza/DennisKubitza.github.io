@@ -70,7 +70,7 @@ input[type=submit]:hover {
 
 .col-25 {
   float: left;
-  width: 25%;
+  width: 33%;
   margin-top: 6px;
 }
 
@@ -87,6 +87,11 @@ input[type=submit]:hover {
   clear: both;
 }
 
+img {
+  width: auto;
+  height: 200px;
+}
+
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -96,7 +101,28 @@ input[type=submit]:hover {
   }
 }
 
+div.gallery {
+  margin: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 32%;
+  height: 550px;
+}
 
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: auto;
+  height: 200px;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
 	</style>
 
@@ -144,14 +170,27 @@ input[type=submit]:hover {
 		<div class="w3-main" style="margin-left:340px;margin-right:40px">
 			<!-- About -->
 
+
+
 <div class="w3-container" id="abo" style="margin-top:75px">
+<center>
+<img src="sources/design/sharpened.jpg" alt="W3Schools.com" style="height:300px;">
+<img src="sources/design/dennis.jpg" alt="W3Schools.com" style="height:300px;">
+<img src="sources/design/dennis3.png" alt="W3Schools.com" style="height:300px;">
+</center>
+<br><br>
 				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
 				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-			Lorem Ipsum
-			</div>
+			Welcome to my Homepage. My name is Dennis Oliver Kubitza, 27 years young, research Engineer and Project Manager at Fraunhofer IAIS. Currently I am working in the field of Data Integration in the context of Semantic Web Technologies and in large scale dezentralized Data Spaces (Gaia-X and International Data Spaces), both in the context of Mobility. Recent projects I have been involved (management and Coding)  are the publicly funded <a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/linked-data-services-for-mobility-limbo.html">LIMBO Project</a>, <a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/mobility-data-space.html">Mobility Data Spaces</a> and the upcoming <a href="https://www.acatech.de/projekt/datenraum-mobilitaet/"> Datenraum Mobilitaet </a>, where Fraunhofer IAIS is providing Software for Infrastrucutre Compoenents. In the business area I have worked on Data Integration for Autonomous Vehicles in cooperation with a big international car manufracturer. 
 
+<ul class="w3-xlarge w3-text-blue-grey">
+  <li>Non-parametric Statistics and Stochastic Modelling</li>
+  <li>Behavioural Economics, Game Theory and Social Studies</li>
+  <li>Big Data Applications and Data Science</li>
+</ul>
 
-
+In November 2018 I attended the Fraunhofer Data Scientist Training for Big Data Architectures.
+Since November 2020 I own a Certification as Data Scientist Specialized in Trustworthy AI . 
 
 <!-- Projects -->
 
@@ -171,6 +210,27 @@ input[type=submit]:hover {
 				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
 
 
+<div class="gallery">
+  <center><a target="https://www.dropbox.com/sh/i9oze5iuvdi2hye/AABN3e1HuZxrUyUO6NwHRWDla?dl=0" href="https://www.dropbox.com/sh/i9oze5iuvdi2hye/AABN3e1HuZxrUyUO6NwHRWDla?dl=0">
+    <img src="sources/design/R.png" alt="R Logo" class="img">
+  </a>
+  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey">A 3-5 day R-course.</h4><hr>The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. It was created by Matthias Duch and myself between 2016-2018. The course material is available on GitHub.</div>
+</div>
+
+<div class="gallery">
+<center>
+  <a target="https://github.com/DennisKubitza/LaTeX-Kurs" href="https://github.com/DennisKubitza/LaTeX-Kurs">
+    <img src="sources/design/latex.png" alt="LaTeX Logo" class="img">
+  </a>
+  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey">A 3 day LaTeX beginners course.</h4><hr>The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. The material was created by Max Kirchner for the Department of Mathematics and reworked heavily by Matthias Duch and myself between 2015-2019. The course material is available on GitHub.</div>
+</div>
+
+<div class="gallery">
+  <center><a target="sources/subpages/zTree/index.html" href="sources/subpages/zTree/index.html">
+    <img src="sources/design/z.png" alt="Northern Lights" class="img">
+  </a>
+  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey"> 3 Lectures for z-Tree with Hands on</h4><hr>The course was originally held at briq Institute for Ph.D. and regular Students at the University of Bonn as a knowledge transfer event, after I attendet a course with Urs Fischbacher the creator of z-Tree. </div>
+</div>
 			</div>
 
 
