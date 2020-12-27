@@ -107,7 +107,8 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 32%;
-  height: 550px;
+  min-height: 550px;
+  min-width: 300px;
 }
 
 div.gallery:hover {
@@ -134,7 +135,7 @@ div.desc {
 			<br>
 			<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
 
-			<div class="w3-bar-block" style="margin-top:-50px">
+			<div class="w3-bar-block" style="margin-top:0px">
         <br> <h1>Welcome</h1> <hr>
 				<a href="#abo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
 				<a href="#pro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
@@ -162,7 +163,7 @@ div.desc {
 		<!-- Top menu on small screens -->
 		<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
 			<a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
-			<span>SemanGit</small></span>
+			<span>Homepage</small></span>
 		</header>
 		<!-- Overlay effect when opening sidebar on small screens -->
 		<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
@@ -174,9 +175,9 @@ div.desc {
 
 <div class="w3-container" id="abo" style="margin-top:75px">
 <center>
-<img src="sources/design/sharpened.jpg" alt="W3Schools.com" style="height:300px;">
-<img src="sources/design/dennis.jpg" alt="W3Schools.com" style="height:300px;">
-<img src="sources/design/dennis3.png" alt="W3Schools.com" style="height:300px;">
+<img src="sources/design/sharpened.jpg" alt="W3Schools.com" style="height:300px;margin:5px;">
+<img src="sources/design/dennis.jpg" alt="W3Schools.com" style="height:300px;margin:5px;">
+<img src="sources/design/dennis3.png" alt="W3Schools.com" style="height:300px;margin:5px;">
 </center>
 <br><br>
 				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
