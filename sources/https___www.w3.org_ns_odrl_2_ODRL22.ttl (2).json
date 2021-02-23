@@ -1,0 +1,3553 @@
+{
+  "_comment": "Created with OWL2VOWL (version 0.3.7), http://vowl.visualdataweb.org [Additional Information added by WebVOWL Exporter Version: 1.1.7]",
+  "header": {
+    "languages": [
+      "undefined",
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/1999/02/22-rdf-syntax-ns",
+      "http://www.w3.org/ns/odrl/2",
+      "http://schema.org",
+      "http://www.w3.org/2000/01/rdf-schema",
+      "http://www.w3.org/2001/XMLSchema",
+      "http://xmlns.com/foaf/0.1",
+      "http://www.w3.org/2006/vcard/ns",
+      "http://www.w3.org/2004/02/skos/core"
+    ],
+    "prefixList": {
+      "odrl": "http://www.w3.org/ns/odrl/2/",
+      "owl": "http://www.w3.org/2002/07/owl#",
+      "vcard": "http://www.w3.org/2006/vcard/ns#",
+      "xsd": "http://www.w3.org/2001/XMLSchema#",
+      "dct": "http://purl.org/dc/terms/",
+      "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+      "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+      "skos": "http://www.w3.org/2004/02/skos/core#",
+      "": "http://www.w3.org/ns/odrl/2/",
+      "cc": "http://creativecommons.org/ns#",
+      "xml": "http://www.w3.org/XML/1998/namespace",
+      "schema": "http://schema.org/",
+      "foaf": "http://xmlns.com/foaf/0.1/"
+    },
+    "iri": "http://www.w3.org/ns/odrl/2/",
+    "version": "2.2",
+    "author": [
+      "Renato Iannella",
+      "Michael Steidl",
+      "Stuart Myles",
+      "Víctor Rodríguez-Doncel"
+    ],
+    "description": {
+      "en": "The ODRL Vocabulary and Expression defines a set of concepts and terms (the vocabulary) and encoding mechanism (the expression) for permissions and obligations statements describing digital content usage based on the ODRL Information Model."
+    },
+    "labels": {
+      "en": "ODRL Version 2.2"
+    },
+    "comments": {
+      "en": "This is the RDF ontology for ODRL Version 2.2."
+    },
+    "other": {
+      "license": [
+        {
+          "identifier": "license",
+          "language": "undefined",
+          "value": "https://www.w3.org/Consortium/Legal/2002/ipr-notice-20021231#Copyright/",
+          "type": "iri"
+        }
+      ],
+      "creator": [
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Stuart Myles",
+          "type": "label"
+        },
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Michael Steidl",
+          "type": "label"
+        },
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Víctor Rodríguez-Doncel",
+          "type": "label"
+        },
+        {
+          "identifier": "creator",
+          "language": "undefined",
+          "value": "Renato Iannella",
+          "type": "label"
+        }
+      ],
+      "contributor": [
+        {
+          "identifier": "contributor",
+          "language": "undefined",
+          "value": "W3C Permissions & Obligations Expression Working Group",
+          "type": "label"
+        }
+      ],
+      "versionInfo": [
+        {
+          "identifier": "versionInfo",
+          "language": "undefined",
+          "value": "2.2",
+          "type": "label"
+        }
+      ]
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": "0.28",
+      "translation": [
+        651.36,
+        -29.12
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": false
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "0"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "21",
+      "type": "owl:Class"
+    },
+    {
+      "id": "22",
+      "type": "owl:Class"
+    },
+    {
+      "id": "23",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "26",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "27",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "35",
+      "type": "owl:Class"
+    },
+    {
+      "id": "40",
+      "type": "owl:Class"
+    },
+    {
+      "id": "36",
+      "type": "owl:Class"
+    },
+    {
+      "id": "48",
+      "type": "owl:Class"
+    },
+    {
+      "id": "84",
+      "type": "owl:Class"
+    },
+    {
+      "id": "95",
+      "type": "owl:Class"
+    },
+    {
+      "id": "2",
+      "type": "owl:Class"
+    },
+    {
+      "id": "107",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "8",
+      "type": "owl:Class"
+    },
+    {
+      "id": "75",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "110",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "116",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "117",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "108",
+      "type": "owl:Class"
+    },
+    {
+      "id": "123",
+      "type": "owl:Class"
+    },
+    {
+      "id": "125",
+      "type": "owl:Class"
+    },
+    {
+      "id": "81",
+      "type": "owl:Class"
+    },
+    {
+      "id": "124",
+      "type": "owl:Thing"
+    },
+    {
+      "id": "136",
+      "type": "owl:Class"
+    },
+    {
+      "id": "140",
+      "type": "owl:Class"
+    },
+    {
+      "id": "1",
+      "type": "owl:Class"
+    },
+    {
+      "id": "12",
+      "type": "owl:Class"
+    },
+    {
+      "id": "142",
+      "type": "owl:Class"
+    },
+    {
+      "id": "39",
+      "type": "owl:Class"
+    },
+    {
+      "id": "19",
+      "type": "owl:unionOf"
+    },
+    {
+      "id": "52",
+      "type": "owl:Class"
+    },
+    {
+      "id": "7",
+      "type": "owl:Class"
+    },
+    {
+      "id": "24",
+      "type": "owl:Class"
+    },
+    {
+      "id": "4",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "21",
+      "iri": "http://www.w3.org/ns/odrl/2/LeftOperand",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "LeftOperand",
+        "en": "Left Operand"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Instances of the LeftOperand class are used as the leftOperand of a Constraint.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Left operand for a constraint expression.",
+            "type": "label"
+          }
+        ]
+      },
+      "individuals": [
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/absolutePosition",
+          "labels": {
+            "IRI-based": "absolutePosition",
+            "en": "Absolute Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/meteredTime",
+          "labels": {
+            "IRI-based": "meteredTime",
+            "en": "Metered Time"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/version",
+          "labels": {
+            "IRI-based": "version",
+            "en": "Version"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/product",
+          "labels": {
+            "IRI-based": "product",
+            "en": "Product Context"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/absoluteTemporalPosition",
+          "labels": {
+            "IRI-based": "absoluteTemporalPosition",
+            "en": "Absolute Temporal Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/elapsedTime",
+          "labels": {
+            "IRI-based": "elapsedTime",
+            "en": "Elapsed Time"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/unitOfCount",
+          "labels": {
+            "IRI-based": "unitOfCount",
+            "en": "Unit Of Count"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/fileFormat",
+          "labels": {
+            "IRI-based": "fileFormat",
+            "en": "File Format"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/event",
+          "labels": {
+            "IRI-based": "event",
+            "en": "Event"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/absoluteSpatialPosition",
+          "labels": {
+            "IRI-based": "absoluteSpatialPosition",
+            "en": "Absolute Spatial Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/percentage",
+          "labels": {
+            "IRI-based": "percentage",
+            "en": "Asset Percentage"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/device",
+          "labels": {
+            "IRI-based": "device",
+            "en": "Device"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/absoluteSize",
+          "labels": {
+            "IRI-based": "absoluteSize",
+            "en": "Absolute Asset Size"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/delayPeriod",
+          "labels": {
+            "IRI-based": "delayPeriod",
+            "en": "Delay Period"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/relativeSize",
+          "labels": {
+            "IRI-based": "relativeSize",
+            "en": "Relative Asset Size"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/purpose",
+          "labels": {
+            "IRI-based": "purpose",
+            "en": "Purpose"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/systemDevice",
+          "labels": {
+            "IRI-based": "systemDevice",
+            "en": "System Device"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/count",
+          "labels": {
+            "IRI-based": "count",
+            "en": "Count"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/dateTime",
+          "labels": {
+            "IRI-based": "dateTime",
+            "en": "Datetime"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/industry",
+          "labels": {
+            "IRI-based": "industry",
+            "en": "Industry Context"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/relativeSpatialPosition",
+          "labels": {
+            "IRI-based": "relativeSpatialPosition",
+            "en": "Relative Spatial Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/virtualLocation",
+          "labels": {
+            "IRI-based": "virtualLocation",
+            "en": "Virtual IT Communication Location"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/spatialCoordinates",
+          "labels": {
+            "IRI-based": "spatialCoordinates",
+            "en": "Geospatial Coordinates"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/recipient",
+          "labels": {
+            "IRI-based": "recipient",
+            "en": "Recipient"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/language",
+          "labels": {
+            "IRI-based": "language",
+            "en": "Language"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/relativePosition",
+          "labels": {
+            "IRI-based": "relativePosition",
+            "en": "Relative Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/payAmount",
+          "labels": {
+            "IRI-based": "payAmount",
+            "en": "Payment Amount"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/relativeTemporalPosition",
+          "labels": {
+            "IRI-based": "relativeTemporalPosition",
+            "en": "Relative Temporal Asset Position"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/system",
+          "labels": {
+            "IRI-based": "system",
+            "en": "System"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/timeInterval",
+          "labels": {
+            "IRI-based": "timeInterval",
+            "en": "Recurring Time Interval"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/resolution",
+          "labels": {
+            "IRI-based": "resolution",
+            "en": "Rendition Resolution"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/spatial",
+          "labels": {
+            "IRI-based": "spatial",
+            "en": "Geospatial Named Area"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/media",
+          "labels": {
+            "IRI-based": "media",
+            "en": "Media Context"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/deliveryChannel",
+          "labels": {
+            "IRI-based": "deliveryChannel",
+            "en": "Delivery Channel"
+          }
+        }
+      ],
+      "pos": [
+        262.95,
+        578.06
+      ],
+      "pinned": true
+    },
+    {
+      "id": "22",
+      "iri": "http://www.w3.org/ns/odrl/2/Constraint",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Constraint",
+        "en": "Constraint"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A boolean expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        427.35,
+        859.85
+      ],
+      "pinned": true
+    },
+    {
+      "id": "23",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        192.72,
+        1292.89
+      ],
+      "pinned": true
+    },
+    {
+      "id": "26",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        -428.35,
+        831.4
+      ],
+      "pinned": true
+    },
+    {
+      "id": "27",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        -546,
+        642.94
+      ],
+      "pinned": true
+    },
+    {
+      "id": "35",
+      "iri": "http://schema.org/Action",
+      "baseIri": "http://schema.org",
+      "label": {
+        "IRI-based": "Action"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        42.53,
+        275.23
+      ]
+    },
+    {
+      "id": "40",
+      "iri": "http://www.w3.org/ns/odrl/2/Operator",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Operator",
+        "en": "Operator"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Instances of the Operator class representing relational operators.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Operator for constraint expression.",
+            "type": "label"
+          }
+        ]
+      },
+      "individuals": [
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/gt",
+          "labels": {
+            "IRI-based": "gt",
+            "en": "Greater than"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/isAllOf",
+          "labels": {
+            "IRI-based": "isAllOf",
+            "en": "Is all of"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/neq",
+          "labels": {
+            "IRI-based": "neq",
+            "en": "Not equal to"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/gteq",
+          "labels": {
+            "IRI-based": "gteq",
+            "en": "Greater than or equal to"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/isNoneOf",
+          "labels": {
+            "IRI-based": "isNoneOf",
+            "en": "Is none of"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/eq",
+          "labels": {
+            "IRI-based": "eq",
+            "en": "Equal to"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/isPartOf",
+          "labels": {
+            "IRI-based": "isPartOf",
+            "en": "Is part of"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/isAnyOf",
+          "labels": {
+            "IRI-based": "isAnyOf",
+            "en": "Is any of"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/hasPart",
+          "labels": {
+            "IRI-based": "hasPart",
+            "en": "Has part"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/isA",
+          "labels": {
+            "IRI-based": "isA",
+            "en": "Is a"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/lt",
+          "labels": {
+            "IRI-based": "lt",
+            "en": "Less than"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/lteq",
+          "labels": {
+            "IRI-based": "lteq",
+            "en": "Less than or equal to"
+          }
+        }
+      ],
+      "pos": [
+        418.17,
+        1156.23
+      ],
+      "pinned": true
+    },
+    {
+      "id": "36",
+      "iri": "http://www.w3.org/ns/odrl/2/Action",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": "Action",
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Actions may be allowed by Permissions, disallowed by Prohibitions, or made mandatory by Duties.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An operation on an Asset.",
+            "type": "label"
+          }
+        ]
+      },
+      "individuals": [
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/watermark",
+          "labels": {
+            "IRI-based": "watermark",
+            "en": "Watermark"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/write",
+          "labels": {
+            "IRI-based": "write",
+            "en": "Write"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/execute",
+          "labels": {
+            "IRI-based": "execute",
+            "en": "Execute"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/sell",
+          "labels": {
+            "IRI-based": "sell",
+            "en": "Sell"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/display",
+          "labels": {
+            "IRI-based": "display",
+            "en": "Display"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/shareAlike",
+          "labels": {
+            "IRI-based": "shareAlike",
+            "en": "Share-alike"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#SourceCode",
+          "labels": {
+            "IRI-based": "SourceCode",
+            "en": "Source Code"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/secondaryUse",
+          "labels": {
+            "IRI-based": "secondaryUse",
+            "en": "Secondary Use"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/pay",
+          "labels": {
+            "IRI-based": "pay",
+            "en": "Pay"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/transfer",
+          "labels": {
+            "IRI-based": "transfer",
+            "en": "Transfer Ownership"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/move",
+          "labels": {
+            "IRI-based": "move",
+            "en": "Move"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/obtainConsent",
+          "labels": {
+            "IRI-based": "obtainConsent",
+            "en": "Obtain Consent"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/transform",
+          "labels": {
+            "IRI-based": "transform",
+            "en": "Transform"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/acceptTracking",
+          "labels": {
+            "IRI-based": "acceptTracking",
+            "en": "Accept Tracking"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/attachSource",
+          "labels": {
+            "IRI-based": "attachSource",
+            "en": "Attach source"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#CommericalUse",
+          "labels": {
+            "IRI-based": "CommericalUse",
+            "en": "Commercial Use"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#ShareAlike",
+          "labels": {
+            "IRI-based": "ShareAlike",
+            "en": "Share Alike"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/preview",
+          "labels": {
+            "IRI-based": "preview",
+            "en": "Preview"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/play",
+          "labels": {
+            "IRI-based": "play",
+            "en": "Play"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/concurrentUse",
+          "labels": {
+            "IRI-based": "concurrentUse",
+            "en": "Concurrent Use"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/attachPolicy",
+          "labels": {
+            "IRI-based": "attachPolicy",
+            "en": "Attach policy"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/nextPolicy",
+          "labels": {
+            "IRI-based": "nextPolicy",
+            "en": "Next Policy"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/present",
+          "labels": {
+            "IRI-based": "present",
+            "en": "Present"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/textToSpeech",
+          "labels": {
+            "IRI-based": "textToSpeech",
+            "en": "Text-to-speech"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/writeTo",
+          "labels": {
+            "IRI-based": "writeTo",
+            "en": "Write to"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/install",
+          "labels": {
+            "IRI-based": "install",
+            "en": "Install"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/export",
+          "labels": {
+            "IRI-based": "export",
+            "en": "Export"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/extractWord",
+          "labels": {
+            "IRI-based": "extractWord",
+            "en": "Extract word"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/stream",
+          "labels": {
+            "IRI-based": "stream",
+            "en": "Stream"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/extractPage",
+          "labels": {
+            "IRI-based": "extractPage",
+            "en": "Extract page"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/inform",
+          "labels": {
+            "IRI-based": "inform",
+            "en": "Inform"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/adHocShare",
+          "labels": {
+            "IRI-based": "adHocShare",
+            "en": "Ad-hoc sharing"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/include",
+          "labels": {
+            "IRI-based": "include",
+            "en": "Include"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/anonymize",
+          "labels": {
+            "IRI-based": "anonymize",
+            "en": "Anonymize"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#DerivativeWorks",
+          "labels": {
+            "IRI-based": "DerivativeWorks",
+            "en": "Derivative Works"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/read",
+          "labels": {
+            "IRI-based": "read",
+            "en": "Read"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/archive",
+          "labels": {
+            "IRI-based": "archive",
+            "en": "Archive"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/index",
+          "labels": {
+            "IRI-based": "index",
+            "en": "Index"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/digitize",
+          "labels": {
+            "IRI-based": "digitize",
+            "en": "Digitize"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/attribute",
+          "labels": {
+            "IRI-based": "attribute",
+            "en": "Attribute"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/give",
+          "labels": {
+            "IRI-based": "give",
+            "en": "Give"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/share",
+          "labels": {
+            "IRI-based": "share",
+            "en": "Share"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/compensate",
+          "labels": {
+            "IRI-based": "compensate",
+            "en": "Compensate"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/commercialize",
+          "labels": {
+            "IRI-based": "commercialize",
+            "en": "Commercialize"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/aggregate",
+          "labels": {
+            "IRI-based": "aggregate",
+            "en": "Aggregate"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#Distribution",
+          "labels": {
+            "IRI-based": "Distribution",
+            "en": "Distribution"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/reproduce",
+          "labels": {
+            "IRI-based": "reproduce",
+            "en": "Reproduce"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/license",
+          "labels": {
+            "IRI-based": "license",
+            "en": "License"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/extract",
+          "labels": {
+            "IRI-based": "extract",
+            "en": "Extract"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/grantUse",
+          "labels": {
+            "IRI-based": "grantUse",
+            "en": "Grant Use"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/lend",
+          "labels": {
+            "IRI-based": "lend",
+            "en": "Lend"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/derive",
+          "labels": {
+            "IRI-based": "derive",
+            "en": "Derive"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/synchronize",
+          "labels": {
+            "IRI-based": "synchronize",
+            "en": "Synchronize"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/lease",
+          "labels": {
+            "IRI-based": "lease",
+            "en": "Lease"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/reviewPolicy",
+          "labels": {
+            "IRI-based": "reviewPolicy",
+            "en": "Review Policy"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#Reproduction",
+          "labels": {
+            "IRI-based": "Reproduction",
+            "en": "Reproduction"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#Attribution",
+          "labels": {
+            "IRI-based": "Attribution",
+            "en": "Attribution"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/append",
+          "labels": {
+            "IRI-based": "append",
+            "en": "Append"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/use",
+          "labels": {
+            "IRI-based": "use",
+            "en": "Use"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/appendTo",
+          "labels": {
+            "IRI-based": "appendTo",
+            "en": "Append To"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/modify",
+          "labels": {
+            "IRI-based": "modify",
+            "en": "Modify"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/copy",
+          "labels": {
+            "IRI-based": "copy",
+            "en": "Copy"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/translate",
+          "labels": {
+            "IRI-based": "translate",
+            "en": "Translate"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/uninstall",
+          "labels": {
+            "IRI-based": "uninstall",
+            "en": "Uninstall"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#Sharing",
+          "labels": {
+            "IRI-based": "Sharing",
+            "en": "Sharing"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/distribute",
+          "labels": {
+            "IRI-based": "distribute",
+            "en": "Distribute"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/print",
+          "labels": {
+            "IRI-based": "print",
+            "en": "Print"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/delete",
+          "labels": {
+            "IRI-based": "delete",
+            "en": "Delete"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/annotate",
+          "labels": {
+            "IRI-based": "annotate",
+            "en": "Annotate"
+          }
+        },
+        {
+          "iri": "http://creativecommons.org/ns#Notice",
+          "labels": {
+            "IRI-based": "Notice",
+            "en": "Notice"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/extractChar",
+          "labels": {
+            "IRI-based": "extractChar",
+            "en": "Extract character"
+          }
+        },
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/ensureExclusivity",
+          "labels": {
+            "IRI-based": "ensureExclusivity",
+            "en": "Ensure Exclusivity"
+          }
+        }
+      ],
+      "pos": [
+        -199.73,
+        756.27
+      ],
+      "pinned": true
+    },
+    {
+      "id": "48",
+      "iri": "http://www.w3.org/2006/vcard/ns#Individual",
+      "baseIri": "http://www.w3.org/2006/vcard/ns",
+      "label": {
+        "IRI-based": "Individual"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -363.01,
+        998.85
+      ],
+      "pinned": true
+    },
+    {
+      "id": "84",
+      "iri": "http://www.w3.org/ns/odrl/2/Request",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Request",
+        "en": "Request"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "A Request Policy  MUST contain a target Asset, a Party with Assignee function, and at least one of a Permission or Prohibition rule. The Request MAY also contain the Party with Assigner function if this is known. No privileges are granted to any Party.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A Policy that proposes a Rule over an Asset from an assignee.",
+            "type": "label"
+          }
+        ],
+        "scopeNote": [
+          {
+            "identifier": "scopeNote",
+            "language": "en",
+            "value": "Non-Normative",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -540.99,
+        1780.03
+      ],
+      "pinned": true
+    },
+    {
+      "id": "95",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Literal",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": {
+        "IRI-based": "Literal"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        872.89,
+        658.05
+      ],
+      "pinned": true
+    },
+    {
+      "id": "2",
+      "iri": "http://www.w3.org/ns/odrl/2/Policy",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Policy",
+        "en": "Policy"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "A Policy may contain multiple Rules.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A non-empty group of Permissions and/or Prohibitions.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -775.29,
+        1543.86
+      ],
+      "pinned": true
+    },
+    {
+      "id": "107",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        -935.44,
+        1076.5
+      ],
+      "pinned": true
+    },
+    {
+      "id": "8",
+      "iri": "http://www.w3.org/ns/odrl/2/Duty",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Duty",
+        "en": "Duty"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The obligation to perform an Action",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -1152.13,
+        1137.11
+      ],
+      "pinned": true
+    },
+    {
+      "id": "75",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        645.58,
+        937.59
+      ],
+      "pinned": true
+    },
+    {
+      "id": "110",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        -725.56,
+        895.59
+      ],
+      "pinned": true
+    },
+    {
+      "id": "116",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        -844.01,
+        977.45
+      ],
+      "pinned": true
+    },
+    {
+      "id": "117",
+      "attributes": [
+        "union",
+        "anonymous"
+      ],
+      "pos": [
+        10.32,
+        717.06
+      ],
+      "pinned": true
+    },
+    {
+      "id": "108",
+      "iri": "http://www.w3.org/2001/XMLSchema#anyURI",
+      "baseIri": "http://www.w3.org/2001/XMLSchema",
+      "label": {
+        "IRI-based": "anyURI"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        809.74,
+        1027.02
+      ],
+      "pinned": true
+    },
+    {
+      "id": "123",
+      "iri": "http://www.w3.org/2006/vcard/ns#Organization",
+      "baseIri": "http://www.w3.org/2006/vcard/ns",
+      "label": {
+        "IRI-based": "Organization"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -247.57,
+        1116.73
+      ],
+      "pinned": true
+    },
+    {
+      "id": "125",
+      "iri": "http://schema.org/Person",
+      "baseIri": "http://schema.org",
+      "label": {
+        "IRI-based": "Person"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -450.61,
+        1416.34
+      ],
+      "pinned": true
+    },
+    {
+      "id": "81",
+      "iri": "http://www.w3.org/ns/odrl/2/RightOperand",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "RightOperand",
+        "en": "Right Operand"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Instances of the RightOperand class are used as the rightOperand of a Constraint.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Right operand for constraint expression.",
+            "type": "label"
+          }
+        ]
+      },
+      "individuals": [
+        {
+          "iri": "http://www.w3.org/ns/odrl/2/policyUsage",
+          "labels": {
+            "IRI-based": "policyUsage",
+            "en": "Policy Rule Usage"
+          }
+        }
+      ],
+      "pos": [
+        676.2,
+        732.25
+      ],
+      "pinned": true
+    },
+    {
+      "id": "124",
+      "iri": "http://www.w3.org/2002/07/owl#Thing",
+      "baseIri": "http://owl2vowl.de",
+      "label": {
+        "undefined": "Thing"
+      },
+      "pos": [
+        284.12,
+        881.5
+      ],
+      "pinned": true
+    },
+    {
+      "id": "136",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2000/01/rdf-schema",
+      "label": {
+        "IRI-based": "Datatype"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        565.27,
+        616.1
+      ],
+      "pinned": true
+    },
+    {
+      "id": "140",
+      "iri": "http://schema.org/Organization",
+      "baseIri": "http://schema.org",
+      "label": {
+        "IRI-based": "Organization"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -271.01,
+        1345.87
+      ],
+      "pinned": true
+    },
+    {
+      "id": "1",
+      "iri": "http://www.w3.org/ns/odrl/2/Rule",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Rule",
+        "en": "Rule"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Rule is an abstract concept.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An abstract concept that represents the common characteristics of Permissions, Prohibitions, and Duties.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -1051.45,
+        661.89
+      ],
+      "pinned": true
+    },
+    {
+      "id": "12",
+      "iri": "http://www.w3.org/ns/odrl/2/Permission",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Permission",
+        "en": "Permission"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The ability to perform an Action over an Asset.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -1413.75,
+        1400.02
+      ],
+      "pinned": true
+    },
+    {
+      "id": "142",
+      "iri": "http://www.w3.org/2006/vcard/ns#Agent",
+      "baseIri": "http://www.w3.org/2006/vcard/ns",
+      "label": {
+        "IRI-based": "Agent"
+      },
+      "attributes": [
+        "external"
+      ],
+      "pos": [
+        -193.2,
+        1249.85
+      ],
+      "pinned": true
+    },
+    {
+      "id": "39",
+      "iri": "http://www.w3.org/ns/odrl/2/Privacy",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Privacy",
+        "en": "Privacy Policy"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "A Privacy Policy  MUST contain a target Asset, a Party with Assigner  is, a Party with Assignee function, and at least one of a Permission or Prohibition rule that MUST include a Duty. The target Asset SHOULD contain or relate to personal information about the Assignee. The Duty MUST describe obligations on the Assigner about managing the Asset. The Assignee is being granted the terms of the Privacy policy from the Assigner.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A Policy that expresses a Rule over an Asset containing personal information.",
+            "type": "label"
+          }
+        ],
+        "scopeNote": [
+          {
+            "identifier": "scopeNote",
+            "language": "en",
+            "value": "Non-Normative",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -976.17,
+        1773
+      ],
+      "pinned": true
+    },
+    {
+      "id": "19",
+      "iri": "http://www.w3.org/ns/odrl/2/Party",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Party",
+        "en": "Party"
+      },
+      "attributes": [
+        "union"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The Party entity could be a person, group of people, organisation, or agent. An agent is a person or thing that takes an active role or produces a specified effect. To describe more details about the Party, it is recommended to use W3C vCard Ontology [[vcard-rdf]] or FOAF Vocabulary [[foaf]].",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An entity or a collection of entities that undertake Roles in a Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -427.19,
+        1212.31
+      ],
+      "pinned": true
+    },
+    {
+      "id": "52",
+      "iri": "http://www.w3.org/ns/odrl/2/Agreement",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Agreement",
+        "en": "Agreement"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "An Agreement Policy MUST contain at least one Permission or Prohibition rule, a Party with Assigner function, and a Party with Assignee function (in the same Permission or Prohibition). The Agreement Policy will grant the terms of the Policy from the Assigner to the Assignee.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A Policy that grants the assignee a Rule over an Asset from an assigner.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -774.94,
+        1682.03
+      ],
+      "pinned": true
+    },
+    {
+      "id": "7",
+      "iri": "http://www.w3.org/ns/odrl/2/Prohibition",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Prohibition",
+        "en": "Prohibition"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The inability to perform an Action over an Asset.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -1082.8,
+        1376.34
+      ],
+      "pinned": true
+    },
+    {
+      "id": "24",
+      "iri": "http://www.w3.org/ns/odrl/2/LogicalConstraint",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "LogicalConstraint",
+        "en": "Logical Constraint"
+      },
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A logical expression that refines the semantics of an Action and Party/Asset Collection or declare the conditions applicable to a Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        159.53,
+        933.44
+      ],
+      "pinned": true
+    },
+    {
+      "id": "4",
+      "iri": "http://www.w3.org/ns/odrl/2/Asset",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "Asset",
+        "en": "Asset"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The Asset entity can be any form of identifiable resource, such as data/information, content/media, applications, or services. Furthermore, it can be used to represent other Asset entities that are needed to undertake the Policy expression, such as with the Duty entity. To describe more details about the Asset, it is recommended to use Dublin Core [[dcterms]] elements or other content metadata.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "A resource or a collection of resources that are the subject of a Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "pos": [
+        -735.03,
+        714.67
+      ],
+      "pinned": true
+    }
+  ],
+  "property": [
+    {
+      "id": "6",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "11",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "30",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "31",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "33",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "34",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "41",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "44",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "51",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "74",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "105",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "109",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "115",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "119",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "121",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "58",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "126",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "129",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "131",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "138",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "141",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "9",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "103",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "153",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "156",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "96",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "161",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "162",
+      "type": "owl:disjointWith"
+    },
+    {
+      "id": "167",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "168",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "169",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "170",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "172",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "173",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "175",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "GENERATED-UNION-23-22-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-23-24-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-26-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-26-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-27-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-27-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-107-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-107-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-75-108-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-75-95-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-75-81-2",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-110-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-110-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-116-1-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-116-2-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-117-22-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-117-24-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-19-140-0",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-19-123-1",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-19-125-4",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-19-142-5",
+      "type": "setOperatorProperty"
+    },
+    {
+      "id": "GENERATED-UNION-19-48-7",
+      "type": "setOperatorProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "6",
+      "iri": "http://www.w3.org/ns/odrl/2/remedy",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "remedy",
+        "en": "Remedy"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The remedy property expresses an agreed Duty that must be fulfilled in case that a Prohibition has been violated by being exercised.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates an individual remedy Duty to a Prohibition.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "7",
+      "range": "8",
+      "superproperty": [
+        "9"
+      ],
+      "pos": [
+        -1012.64,
+        1205.55
+      ]
+    },
+    {
+      "id": "11",
+      "iri": "http://www.w3.org/ns/odrl/2/duty",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "duty",
+        "en": "Has Duty"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "A Duty is a pre-condition which must be fulfilled in order to receive the Permission.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates an individual Duty to a Permission.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "12",
+      "range": "8",
+      "pos": [
+        -1292.4,
+        1255
+      ],
+      "pinned": true
+    },
+    {
+      "id": "30",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "12",
+      "pos": [
+        -1351.12,
+        1193.74
+      ]
+    },
+    {
+      "id": "31",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "7",
+      "pos": [
+        -1224.32,
+        1274.82
+      ]
+    },
+    {
+      "id": "33",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "12",
+      "range": "7",
+      "pos": [
+        -1248.28,
+        1388.18
+      ]
+    },
+    {
+      "id": "34",
+      "iri": "http://www.w3.org/ns/odrl/2/permission",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "permission",
+        "en": "Has Permission"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates an individual Permission to a Policy.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "12",
+      "pos": [
+        -1094.52,
+        1471.94
+      ]
+    },
+    {
+      "id": "41",
+      "iri": "http://www.w3.org/ns/odrl/2/operator",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "operator",
+        "en": "Has Operator"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The operator function applied to operands of a Constraint",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "22",
+      "range": "40",
+      "pos": [
+        423.15,
+        995.29
+      ]
+    },
+    {
+      "id": "44",
+      "iri": "http://www.w3.org/ns/odrl/2/obligation",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "obligation",
+        "en": "Obligation"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The Duty is a requirement which must be fulfilled.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates an individual Duty to a Policy.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "8",
+      "pos": [
+        -963.71,
+        1340.48
+      ]
+    },
+    {
+      "id": "51",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "52",
+      "range": "39",
+      "pos": [
+        -875.55,
+        1727.51
+      ]
+    },
+    {
+      "id": "74",
+      "iri": "http://www.w3.org/ns/odrl/2/rightOperand",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "rightOperand",
+        "en": "Has Right Operand"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "When used with set-based operators, a list of values may be used.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The value of the right operand in a constraint expression.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "22",
+      "range": "75",
+      "pos": [
+        536.47,
+        898.72
+      ]
+    },
+    {
+      "id": "105",
+      "iri": "http://www.w3.org/ns/odrl/2/includedIn",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "includedIn",
+        "en": "Included In"
+      },
+      "attributes": [
+        "transitive"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The purpose is to explicitly assert that the semantics of the referenced instance of an other Action encompasses (includes) the semantics of this instance of Action. The includedIn property is transitive, and as such, the Actions form ancestor relationships.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An Action transitively asserts that another Action that encompasses its operational semantics.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "36",
+      "range": "36",
+      "pos": [
+        -2.11,
+        969.82
+      ],
+      "pinned": true
+    },
+    {
+      "id": "109",
+      "iri": "http://www.w3.org/ns/odrl/2/target",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "target",
+        "en": "Target"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The target property indicates the Asset that is the primary subject to which the Rule action directly applies.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "110",
+      "range": "4",
+      "superproperty": [
+        "111"
+      ],
+      "pos": [
+        -730.3,
+        805.13
+      ]
+    },
+    {
+      "id": "115",
+      "iri": "http://www.w3.org/ns/odrl/2/output",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "output",
+        "en": "Output"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The output property specifies the Asset which is created from the output of the Action.",
+            "type": "label"
+          }
+        ],
+        "scopeNote": [
+          {
+            "identifier": "scopeNote",
+            "language": "en",
+            "value": "Non-Normative",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "1",
+      "range": "4",
+      "superproperty": [
+        "111"
+      ],
+      "pos": [
+        -893.24,
+        688.28
+      ]
+    },
+    {
+      "id": "119",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "36",
+      "range": "35",
+      "pos": [
+        -69.76,
+        498.19
+      ]
+    },
+    {
+      "id": "121",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "39",
+      "range": "2",
+      "pos": [
+        -875.73,
+        1658.43
+      ]
+    },
+    {
+      "id": "58",
+      "iri": "http://www.w3.org/ns/odrl/2/operand",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "operand",
+        "en": "Operand"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Sub-properties of operand are used for Logical Constraints.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Operand is an abstract property for a logical relationship.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "24",
+      "range": "124",
+      "subproperty": [
+        "94",
+        "57",
+        "76",
+        "89"
+      ],
+      "pos": [
+        231.06,
+        903.62
+      ]
+    },
+    {
+      "id": "126",
+      "iri": "http://www.w3.org/ns/odrl/2/consequence",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "consequence",
+        "en": "Consequence"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The consequence property is utilised to express the repercussions of not fulfilling an agreed Policy obligation or duty for a Permission. If either of these fails to be fulfilled, then this will result in the consequence Duty also becoming a new requirement, meaning that the original obligation or duty, as well as the consequence Duty must all be fulfilled",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates a Duty to another Duty, the latter being a consequence of not fulfilling the former.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "8",
+      "range": "8",
+      "superproperty": [
+        "9"
+      ],
+      "pos": [
+        -1430.31,
+        997.76
+      ],
+      "pinned": true
+    },
+    {
+      "id": "129",
+      "iri": "http://www.w3.org/ns/odrl/2/inheritFrom",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "inheritFrom",
+        "en": "Inherits From"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The child policy will inherit Rules from the parent policy",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates a (child) policy to another (parent) policy from which terms are inherited.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "2",
+      "pos": [
+        -604.66,
+        1531.37
+      ],
+      "pinned": true
+    },
+    {
+      "id": "131",
+      "iri": "http://www.w3.org/ns/odrl/2/leftOperand",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "leftOperand",
+        "en": "Has Left Operand"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The left operand in a constraint expression.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "22",
+      "range": "21",
+      "pos": [
+        353.57,
+        733.4
+      ]
+    },
+    {
+      "id": "138",
+      "iri": "http://www.w3.org/ns/odrl/2/prohibition",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "prohibition",
+        "en": "Has Prohibition"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Relates an individual Prohibition to a Policy.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "2",
+      "range": "7",
+      "pos": [
+        -929.05,
+        1460.1
+      ]
+    },
+    {
+      "id": "141",
+      "iri": "http://www.w3.org/ns/odrl/2/action",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "action",
+        "en": "Has Action"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The operation relating to the Asset for which the Rule is being subjected.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "27",
+      "range": "36",
+      "pos": [
+        -391.55,
+        693.49
+      ]
+    },
+    {
+      "id": "9",
+      "iri": "http://www.w3.org/ns/odrl/2/failure",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "failure",
+        "en": "Failure"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The parent property to sub-properties that express explicit failure contexts.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Failure is an abstract property that defines the violation (or unmet) relationship between Rules.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "1",
+      "range": "1",
+      "subproperty": [
+        "6",
+        "126"
+      ],
+      "pos": [
+        -1285.73,
+        601.95
+      ],
+      "pinned": true
+    },
+    {
+      "id": "103",
+      "iri": "http://www.w3.org/ns/odrl/2/assigner",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "assigner",
+        "en": "Assigner"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The Party is the issuer of the Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "116",
+      "range": "19",
+      "superproperty": [
+        "15"
+      ],
+      "pos": [
+        -635.6,
+        1094.88
+      ]
+    },
+    {
+      "id": "153",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "52",
+      "pos": [
+        -657.97,
+        1731.03
+      ]
+    },
+    {
+      "id": "156",
+      "iri": "http://www.w3.org/ns/odrl/2/dataType",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "dataType",
+        "en": "Datatype"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "In RDF encodings, use of the rdf:datatype MUST be used. In JSON-LD encoding, the use of @type MUST be used.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The datatype of the value of the rightOperand or rightOperandReference of a Constraint.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "22",
+      "range": "136",
+      "pos": [
+        496.31,
+        737.98
+      ]
+    },
+    {
+      "id": "96",
+      "iri": "http://www.w3.org/ns/odrl/2/assignee",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "assignee",
+        "en": "Assignee"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "The Party is the recipient of the Rule.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "107",
+      "range": "19",
+      "superproperty": [
+        "15"
+      ],
+      "pos": [
+        -681.31,
+        1144.4
+      ]
+    },
+    {
+      "id": "161",
+      "iri": "http://www.w3.org/ns/odrl/2/implies",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "implies",
+        "en": "Implies"
+      },
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "The property asserts that an instance of Action entails that the other instance of Action is not prohibited.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "An Action asserts that another Action is not prohibited to enable its operational semantics.",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "36",
+      "range": "36",
+      "pos": [
+        -133.16,
+        580.84
+      ]
+    },
+    {
+      "id": "162",
+      "label": "Disjoint With",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "39",
+      "pos": [
+        -758.58,
+        1776.51
+      ]
+    },
+    {
+      "id": "167",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "7",
+      "range": "1",
+      "pos": [
+        -1067.13,
+        1019.11
+      ]
+    },
+    {
+      "id": "168",
+      "iri": "http://www.w3.org/ns/odrl/2/refinement",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "refinement",
+        "en": "Refinement"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Example: the Action print is only permitted on 50% of the asset.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Constraint used to refine the semantics of an Action, or Party/Asset Collection",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "36",
+      "range": "117",
+      "pos": [
+        -75.38,
+        733.06
+      ]
+    },
+    {
+      "id": "169",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "12",
+      "range": "1",
+      "pos": [
+        -1232.6,
+        1030.95
+      ]
+    },
+    {
+      "id": "170",
+      "iri": "http://www.w3.org/ns/odrl/2/constraint",
+      "baseIri": "http://www.w3.org/ns/odrl/2",
+      "label": {
+        "IRI-based": "constraint",
+        "en": "Has Constraint"
+      },
+      "attributes": [
+        "object"
+      ],
+      "annotations": {
+        "note": [
+          {
+            "identifier": "note",
+            "language": "en",
+            "value": "Constraints on Rules are used to determine if a rule is Active or not. Example: the Permission rule is only active during the year 2018.",
+            "type": "label"
+          }
+        ],
+        "isDefinedBy": [
+          {
+            "identifier": "isDefinedBy",
+            "language": "undefined",
+            "value": "http://www.w3.org/ns/odrl/2/",
+            "type": "iri"
+          }
+        ],
+        "definition": [
+          {
+            "identifier": "definition",
+            "language": "en",
+            "value": "Constraint applied to a Rule",
+            "type": "label"
+          }
+        ]
+      },
+      "domain": "26",
+      "range": "23",
+      "pos": [
+        -117.82,
+        1062.14
+      ]
+    },
+    {
+      "id": "172",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "8",
+      "range": "1",
+      "pos": [
+        -1101.79,
+        899.5
+      ]
+    },
+    {
+      "id": "173",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "84",
+      "range": "2",
+      "pos": [
+        -658.14,
+        1661.94
+      ]
+    },
+    {
+      "id": "175",
+      "label": "Subclass of",
+      "attributes": [
+        "object",
+        "anonymous"
+      ],
+      "domain": "52",
+      "range": "2",
+      "pos": [
+        -775.12,
+        1612.94
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-23-22-0",
+      "domain": "23",
+      "range": "22",
+      "pos": [
+        310.03,
+        1076.37
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-23-24-1",
+      "domain": "23",
+      "range": "24",
+      "pos": [
+        176.13,
+        1113.16
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-26-1-0",
+      "domain": "26",
+      "range": "1",
+      "pos": [
+        -739.9,
+        746.65
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-26-2-1",
+      "domain": "26",
+      "range": "2",
+      "pos": [
+        -601.82,
+        1187.63
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-27-1-0",
+      "domain": "27",
+      "range": "1",
+      "pos": [
+        -798.73,
+        652.42
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-27-2-1",
+      "domain": "27",
+      "range": "2",
+      "pos": [
+        -660.65,
+        1093.4
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-107-1-0",
+      "domain": "107",
+      "range": "1",
+      "pos": [
+        -993.45,
+        869.19
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-107-2-1",
+      "domain": "107",
+      "range": "2",
+      "pos": [
+        -855.37,
+        1310.18
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-75-108-0",
+      "domain": "75",
+      "range": "108",
+      "pos": [
+        727.66,
+        982.31
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-75-95-1",
+      "domain": "75",
+      "range": "95",
+      "pos": [
+        759.24,
+        797.82
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-75-81-2",
+      "domain": "75",
+      "range": "81",
+      "pos": [
+        660.11,
+        840.14
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-110-1-0",
+      "domain": "110",
+      "range": "1",
+      "pos": [
+        -888.51,
+        778.74
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-110-2-1",
+      "domain": "110",
+      "range": "2",
+      "pos": [
+        -750.43,
+        1219.72
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-116-1-0",
+      "domain": "116",
+      "range": "1",
+      "pos": [
+        -947.73,
+        819.67
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-116-2-1",
+      "domain": "116",
+      "range": "2",
+      "pos": [
+        -809.65,
+        1260.65
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-117-22-0",
+      "domain": "117",
+      "range": "22",
+      "pos": [
+        218.84,
+        788.46
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-117-24-1",
+      "domain": "117",
+      "range": "24",
+      "pos": [
+        84.93,
+        825.25
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-19-140-0",
+      "domain": "19",
+      "range": "140",
+      "pos": [
+        -349.1,
+        1279.09
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-19-123-1",
+      "domain": "19",
+      "range": "123",
+      "pos": [
+        -337.38,
+        1164.52
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-19-125-4",
+      "domain": "19",
+      "range": "125",
+      "pos": [
+        -438.9,
+        1314.32
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-19-142-5",
+      "domain": "19",
+      "range": "142",
+      "pos": [
+        -310.2,
+        1231.08
+      ]
+    },
+    {
+      "id": "GENERATED-UNION-19-48-7",
+      "domain": "19",
+      "range": "48",
+      "pos": [
+        -395.1,
+        1105.58
+      ]
+    }
+  ]
+}
