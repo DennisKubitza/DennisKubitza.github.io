@@ -1,223 +1,197 @@
-<!DOCTYPE>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>Dennis Oliver Kubitza - Homepage</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="robots" content="noimageindex">
-	<meta name="description" content="Dennis Kubitza - CV Projects Publications Courses">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-	<link rel="stylesheet" href="./sources/design/style.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noimageindex">
+  <meta name="description" content="Dennis Kubitza - CV Projects Publications Courses">
+  <title>Dennis Oliver Kubitza - Homepage</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="./sources/design/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+  <style>
+    body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
+    body {font-size: 16px; margin: 0; background-color: #f9f9f9;}
+    img {height: 200px; width: auto;}
+    .w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer;}
+    .w3-half img:hover {opacity: 1;}
+
+    /* Social Media Icons */
+    .fa {
+      padding: 15px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
+      border-radius: 50%;
+      background: #333;
+      color: white;
+    }
+    .fa:hover {
+      background: #555;
+    }
+
+    /* Form Styles */
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      resize: vertical;
+    }
+    label {
+      padding: 12px 0;
+      display: inline-block;
+    }
+    input[type=submit] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    input[type=submit]:hover {
+      background-color: #45a049;
+    }
+
+    /* Layout Helpers */
+    .container {
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Gallery Tiles (Courses Section) */
+    div.gallery {
+      margin: 5px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      float: left;
+      width: 32%;
+      min-height: 550px;
+      min-width: 300px;
+      background: white;
+      border-radius: 8px;
+      transition: box-shadow 0.3s ease;
+    }
+    div.gallery:hover {
+      border-color: #777;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    div.desc {
+      padding: 15px;
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media screen and (max-width: 600px) {
+      .col-25, .col-75, input[type=submit], div.gallery {
+        width: 100%;
+        margin-top: 0;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+  <div class="w3-bar-block" style="margin-top:20px;">
+    <h1>Welcome</h1><hr>
+
+    <a href="#abo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
+    <a href="#cou" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a>
+    <a href="#pub" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
+    <hr>
+
+    Also find me on:<br>
+    <a href="https://www.linkedin.com/in/dennis-oliver-kubitza-6675a1b7/" class="w3-bar-item w3-button w3-hover-white fab fa-linkedin"> LinkedIn</a>
+    <a href="https://github.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-github"> GitHub</a>
+    <a href="https://gitlab.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-gitlab"> GitLab</a>
+    <a href="https://discordapp.com/users/xxxx/" class="w3-bar-item w3-button w3-hover-white fab fa-discord"> Discord</a>
+    <a href="https://www.researchgate.net/profile/Dennis_Kubitza" class="w3-bar-item w3-button w3-hover-white fab fa-researchgate"> ResearchGate</a>
+    <a href="https://scholar.google.com/citations?user=3CS6nfcAAAAJ&hl=en" class="w3-bar-item w3-button w3-hover-white fab fa-google"> Google Scholar</a>
+  </div>
+</nav>
+
+<!-- Top menu for small screens -->
+<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Homepage</span>
+</header>
+
+<!-- Overlay for closing sidebar -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main Content -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 
-	<style>
-		body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-		body {font-size:16px;}
-		.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
-		.w3-half img:hover{opacity:1}
+  <!-- About -->
+<div class="w3-container" id="abo" style="margin-top:60px;">
+  <div class="w3-container w3-center" style="margin-top:10px;">
+    <div class="w3-panel w3-leftbar w3-round-xxlarge" style="background: linear-gradient(135deg, #378dbf, #2b6d99); border-left: 5px solid #80CFFF; display: inline-block; max-width: 800px; padding: 30px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+
+      <img src="sources/design/sharpened.jpg" alt="Dennis Oliver Kubitza" style="width:600px; height:auto; border-radius: 10%; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
+
+      <h3 class="w3-xxlarge w3-text-white" style="margin-top:10px; margin-bottom:10px;"><b>Seeking New Opportunities!</b></h3>
+
+      <p class="w3-large w3-text-white" style="margin:10px 0;">Starting Fall 2025, I'm excited for fresh professional challenges.<br>Download my CV and let's connect!</p>
+
+      <a href="sources/content/CV_Dennis_Kubitza.pdf" download class="w3-button w3-white w3-round-xlarge w3-hover-light-grey" style="margin-top:15px; padding:10px 24px;">
+        <i class="fa fa-download"></i> Download CV
+      </a>
+
+    </div>
+  </div>
 
 
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
+    <hr style="width:50px;border:5px solid #607d8b" class="w3-round">
 
-<!-- social media -->
+    <p>Welcome! My name is Dennis Oliver Kubitza, born in October 1993. I am currently a PhD Candidate in Regional Economics and Labor Market Statistics at Maastricht University, while working at the <a href="https://www.bibb.de/en/index.php">Federal Institute for Vocational Education and Training (BIBB)</a> in Bonn, Germany. My research focuses on the statistical and causal analysis of mobility, regional, and survey data within the Junior Research Group <a href="https://www.bibb.de/de/133458.php">"RISA"</a>.</p>
 
-.fa {
-  padding: 20px;
-  font-size: 70px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-}
+    <p>Previously, I worked at <a href="https://www.iais.fraunhofer.de/">Fraunhofer IAIS</a> on projects like the <a href="https://www.dataspaces.fraunhofer.de/en/vertikalisierungen/mobility_data_space.html">Mobility Data Space</a> and <a href="https://www.limbo-project.org/">LIMBO</a>. I was involved in project management, proposal development, software engineering (Java, React), and decentralized data architectures (Gaia-X, IDS).</p>
 
-.fa:hover {
-    opacity: 0.7;
-}
+    <p>Additionally, I gained experience in knowledge graph development, behavioral economics research, and statistical programming (R, LaTeX) through roles at Fraunhofer IAIS, briq Institute, and the University of Bonn.</p>
 
+    <h3 class="w3-xlarge w3-text-blue-grey"><b>Key Interests</b></h3>
+    <ul class="w3-large w3-text-blue-grey">
+      <li>Non-parametric Statistics and Stochastic Modeling</li>
+      <li>Regional and Labor Market Analysis</li>
+      <li>Large Data Integration and Decentralized Architectures</li>
+      <li>Behavioral Economics and Social Studies</li>
+    </ul>
 
-input[type=text], select, textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
+    <p>I completed Fraunhofer's "Data Scientist for Big Data Infrastructures" training in 2019 and became a Certified Data Scientist Specialized in Trustworthy AI in 2020. I continue developing my skills through ongoing technical and leadership training.</p>
 
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
+    <h3 class="w3-xlarge w3-text-blue-grey"><b>Personal Interests</b></h3>
+    <ul class="w3-large w3-text-blue-grey">
+      <li>Sailing and fostering teamwork</li>
+      <li>Climbing and bouldering for mental focus</li>
+      <li>Strategic board games and collaborative thinking</li>
+    </ul>
 
-input[type=submit] {
-  background-color: #4CAF50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  float: right;
-}
+    <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/dennis-oliver-kubitza/">LinkedIn</a> or visit my <a href="http://www.dennis-kubitza.de">personal homepage</a>.</p>
+  </div>
 
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
-.col-25 {
-  float: left;
-  width: 33%;
-  margin-top: 6px;
-}
-
-.col-75 {
-  float: left;
-  width: 75%;
-  margin-top: 6px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-img {
-  width: auto;
-  height: 200px;
-}
-
-
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-div.gallery {
-  margin: 5px;
-  padding: 10px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 32%;
-  min-height: 550px;
-  min-width: 300px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: auto;
-  height: 200px;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-	</style>
-
-
-	</head>
-	<body>
-		<!-- Sidebar/menu -->
-		<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
-			<br>
-			<a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-
-			<div class="w3-bar-block" style="margin-top:0px">
-        <br> <h1>Welcome</h1> <hr>
-				<a href="#abo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a> 
-				<a href="#pro" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Projects</a> 
-				<a href="#cou" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a>
-				<a href="#pub" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
-				<a href="#con" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a> 
-      <hr>
-      Also find me on: 
-      <a href="https://www.linkedin.com/in/dennis-oliver-kubitza-6675a1b7/" class=" w3-bar-item w3-button w3-hover-white fab fa-linkedin"> LinkedIn</a>
-      <a href="https://join.skype.com/invite/o9PEYW5qbVJi" class="w3-bar-item w3-button w3-hover-white fab fa-skype"> Skype</a>
-      <a href="https://github.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-github"> GitHub</a>
-      <a href="https://gitlab.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-gitlab"> gitLab </a>
-      <a href="https://discordapp.com/users/xxxx/" class="w3-bar-item w3-button w3-hover-white fab fa-discord"> Discord</a>
-      <a href="https://www.researchgate.net/profile/Dennis_Kubitza" class="w3-bar-item w3-button w3-hover-white fab fa-researchgate"> Researchgate</a>
-<br> <hr>      
-      Direct-Downloads
-      <a href="sources/content/CV_Dennis_Kubitza.pdf" class=" w3-bar-item w3-button w3-hover-white fa fa-download" download> CV</a>
-
-
-
-			</div>
-
-
-		</nav>
-		<!-- Top menu on small screens -->
-		<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
-			<a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
-			<span>Homepage</small></span>
-		</header>
-		<!-- Overlay effect when opening sidebar on small screens -->
-		<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-		<!-- !PAGE CONTENT! -->
-		<div class="w3-main" style="margin-left:340px;margin-right:40px">
-			<!-- About -->
-
-
-
-<div class="w3-container" id="abo" style="margin-top:75px">
-<center>
-</center>
-<br><br>
-				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
-				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-Welcome. My name is Dennis Oliver Kubitza, 27 years young, PhD Student at the Bundesinstitut für Berufsbildung (Federal Institute on Vocational Education). Previously I was working in the research area of Data Integration through Semantic Web Technologies and in the conceptualization and creation of large scale decentralized Data Spaces (Gaia-X and International Data Spaces). Projects I have been involved (Project Management and Software Engineering)  are the Ministry funded <a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/linked-data-services-for-mobility-limbo.html">LIMBO Project</a>, <a href="https://www.bmvi.de/SharedDocs/DE/Artikel/DG/mfund-projekte/mobility-data-space.html">Mobility Data Spaces</a> and the upcoming <a href="https://www.acatech.de/projekt/datenraum-mobilitaet/"> Datenraum Mobilitaet </a>. In addition, I have worked on Data Integration for Autonomous Vehicles. This was done in cooperation with a big international car manufacturer. Despite my current professional work, my key areas of interest are: 
-
-<ul class="w3-xlarge w3-text-blue-grey">
-  <li>Non-parametric Statistics and Stochastic Modelling</li>
-  <li>Behavioural Economics and Social Studies</li>
-  <li>Large Data Analysis and Architectures</li>
-</ul>
-
-In November 2018 I attended the Fraunhofer Data Scientist Training for Big Data Architectures.
-Since November 2020 I am allowed to call myself Certified Data Scientist Specialized in Trustworthy AI.
-
-</div>
-<!-- Projects -->
-
-			<div class="w3-container" id="pro" style="margin-top:75px">
-				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Projects</b></h1>
-				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-
-<h3 class="w3-xlarge w3-text-blue-grey">
-  The Semangit Project
-</h3>
-        <a href="http://www.semangit.de"> SemanGit</a> is the first collection of linked data extracted from GitHub based on a git ontology we designed and extended to include specific GitHub features. The large scale datasets consists of roughly 20 000 000 000 data triples and can be used for the analysis of individual relations between entities. Showcase Analysis of the Dataset cover the cooperation of countries in international organisations, the social structures within programming teams and a regional based analysis of the usage of programming languages. The dataset and Use Cases were presented with two publications at the International Semantic Web Conference 2019, Auckland.
-
-
-<h3 class="w3-xlarge w3-text-blue-grey">
-  Moblity Data Space
-</h3>
-   
-
-<h3 class="w3-xlarge w3-text-blue-grey">
- OIH Plus
-</h3>
-       
-
-</div>
-<!-- Courses -->
-
-			<div class="w3-container" id="cou" style="margin-top:75px">
-				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Courses</b></h1>
+  <!-- Courses -->
+  <div class="w3-container" id="cou" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Courses</b></h1>
+    <hr style="width:50px;border:5px solid #607d8b" class="w3-round">
 				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
 
 
@@ -247,66 +221,35 @@ Since November 2020 I am allowed to call myself Certified Data Scientist Special
 
 <!-- Publications -->
 
-			<div class="w3-container" id="pub" style="margin-top:75px">
-				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Publications</b></h1>
-			  The list contains already published papers. 
-				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-<object type="text/html" width="100%" height="600px" data="sources/content/bib.html">
-</object>
+<div class="w3-container" id="pub" style="margin-top:75px">
+ <h1 class="w3-xxxlarge w3-text-blue-grey"><b>PUBLICATIONS</b></h1>
 
-<h3 class="w3-large w3-text-blue-grey"><b>In Review</b></h3>
-<ul>
-<li>Mobility Data Space - First Implementation and Perspective <br><i> H.Drees, S.Pretzsch, DO.Kubitza, J.Lipp </i><br> ITS World Congress 2021 </li>
-<li>Multi-Application Data Governance: Enhancing the Open Integration Hub for GDPR compliant Data Processing through IDS and SOLID <br> <i> M.Böckmann, DO.Kubitza, S.Höffler, J.Knoop  </i><br> ITS World Congress 2021 </li>
-</ul>
+  <h3 class="w3-xlarge w3-text-blue-grey"><b>A Journal Articles</b></h3>
+  <ul style="padding-left: 20px; margin-top: 5px;">
+    <li>D. O. Kubitza and K. Weßling, “Another one rides the bus – commuting versus moving decisions during the transition to higher education,” Forthcoming, 2025.</li>
+    <li>D. O. Kubitza, “Match me up before i go-go! estimating matching functions for vet students in spatially connected labour markets,” Forthcoming, 2025.</li>
+    <li>D. O. Kubitza and K. Weßling, “Whole lotta training-studying school-to-training transitions by training artificial neural networks,” 2025, Preprint available at Econstore.com.</li>
+    <li>K. Wessling, J. Detemple, D. Kubitza, I. Loll, and N. Theuer, “Same same but different–was regionen mit ausbildungswünschen und-chancen zu tun haben, und warum das nicht für jede/-n gilt,” <i>Berufsbildung in Wissenschaft und Praxis</i>, no. 3, pp. 24–28, 2024.</li>
+  </ul>
 
-
-			</div>
-
-			<!-- Contact -->
-			<div class="w3-container" id="con" style="margin-top:75px">
-				<h1 class="w3-xxxlarge w3-text-blue-grey"><b>Contact</b></h1>
-				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-
-
-
-
-<div class="container">
-  <form  action="https://formspree.io/f/xwkwwqoz"
-  method="POST">
-  <div class="row">
-    <div class="col-25">
-      <label for="fname">Your Email</label>
-    </div>
-    <div class="col-75">
-      <input type="text" id="femail" name="_replyto" placeholder="Your Email..">
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-25">
-      <label for="subject">Subject</label>
-    </div>
-    <div class="col-75">
-      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-    </div>
-  </div>
-  <div class="row">
-    <input type="submit" value="Submit">
-  </div>
-  </form>
+ <h3 class="w3-xlarge w3-text-blue-grey"><b> Whitepapers & Conference Proceedings</b></h3>
+  <ul style="padding-left: 20px; margin-top: 5px;">
+    <li>M. Böckmann, S. Höffler, J. Knoop, H. Schmidt, and D. Kubitza, “Gdpr compliant multi-application data governance: Enhancing the open integration hub with ids and solid,” in 27th ITS World Congress, Hamburg, Germany, 2021.</li>
+    <li>H. Drees, D. O. Kubitza, J. Lipp, S. Pretzsch, and C. S. Langdon, “Mobility data space–first implementation and business opportunities,” in 27th ITS World Congress, Hamburg, Germany, 2021.</li>
+    <li>S. Bader, F. Bruckner, G. Böge, D. O. Kubitza, J. Langkau, and R. Nagel, “Specification ids meta data broker,” in IDSA White Paper, 2020.</li>
+    <li>D. O. Kubitza, M. Böckmann, and D. Graux, “Semangit: A linked dataset from git,” in <i>The Semantic Web–ISWC 2019: 18th International Semantic Web Conference</i>, Auckland, New Zealand, October 26–30, 2019, Proceedings, Part II 18, Springer International Publishing, 2019, pp. 215–228.</li>
+    <li>D. O. Kubitza, M. Böckmann, and D. Graux, “Towards semantically structuring github.,” in ISWC Satellites, vol. 2456, 2019.</li>
+  </ul>
 </div>
 
 
-			</div>
-			
 			<!-- End page content -->
 		</div>
 		<!-- W3.CSS Container -->
 		<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
 
-			<p class="w3-right">      Website for personal, non Commercial Use by Dennis Kubitza. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> <br> 
-Forms by <a href="https://www.formspree.io" title="W3.CSS" target="_blank" class="w3-hover-opacity">formspree.io</a><br> 
-BiblioGraphy by <a href="https://www.jabref.com" title="W3.CSS" target="_blank" class="w3-hover-opacity">JabRef</a> </p>
+			<p class="w3-right">      Website for personal, non Commercial Use by Dennis Kubitza. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> <br>
+
 		</div>
 		<script>
 			// Script to open and close sidebar
@@ -314,12 +257,12 @@ BiblioGraphy by <a href="https://www.jabref.com" title="W3.CSS" target="_blank" 
 			    document.getElementById("mySidebar").style.display = "block";
 			    document.getElementById("myOverlay").style.display = "block";
 			}
-			 
+
 			function w3_close() {
 			    document.getElementById("mySidebar").style.display = "none";
 			    document.getElementById("myOverlay").style.display = "none";
 			}
-			
+
 			// Modal Image Gallery
 			function onClick(element) {
 			  document.getElementById("img01").src = element.src;
