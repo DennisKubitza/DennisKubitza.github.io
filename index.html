@@ -1,277 +1,227 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noimageindex">
-  <meta name="description" content="Dennis Kubitza - CV Projects Publications Courses">
-  <title>Dennis Oliver Kubitza - Homepage</title>
+<html lang="de">
+<head><meta charset="UTF-8">
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <link rel="stylesheet" href="./sources/design/style.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- WP_HEAD() START -->
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600,700,800,900|Roboto:100,200,300,400,500,600,700,800,900">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
 
-  <style>
-    body, h1, h2, h3, h4, h5 {font-family: "Poppins", sans-serif}
-    body {font-size: 16px; margin: 0; background-color: #f9f9f9;}
-    img {height: 200px; width: auto;}
-    .w3-half img {margin-bottom: -6px; margin-top: 16px; opacity: 0.8; cursor: pointer;}
-    .w3-half img:hover {opacity: 1;}
+	<!-- This site is optimized with the Yoast SEO plugin v27.2 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Dennis Oliver Kubitza - Homepage</title>
+	<meta name="description" content="This homepage is dedicated to me, myself and my personal academic work: my PhD, my current research and past teaching ( former R and LateX courses). For professional inquiries, please visit our company homepage at baum-kubi.com.">
+	<link rel="canonical" href="/">
+	<meta property="og:locale" content="de_DE">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Dennis Oliver Kubitza - Homepage">
+	<meta property="og:description" content="This homepage is dedicated to me, myself and my personal academic work: my PhD, my current research and past teaching ( former R and LateX courses). For professional inquiries, please visit our company homepage at baum-kubi.com.">
+	<meta property="og:url" content="/">
+	<meta property="og:site_name" content="Dennis Oliver Kubitza">
+	<meta property="article:modified_time" content="2026-03-30T00:03:27+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":["WebPage","FAQPage"],"@id":"/","url":"/","name":"Dennis Oliver Kubitza - Homepage","isPartOf":{"@id":"/#website"},"datePublished":"2026-01-16T17:48:56+00:00","dateModified":"2026-03-30T00:03:27+00:00","description":"This homepage is dedicated to me, myself and my personal academic work: my PhD, my current research and past teaching ( former R and LateX courses). For professional inquiries, please visit our company homepage at baum-kubi.com.","breadcrumb":{"@id":"/#breadcrumb"},"inLanguage":"de","potentialAction":[{"@type":"ReadAction","target":["/"]}]},{"@type":"BreadcrumbList","@id":"/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Start"}]},{"@type":"WebSite","@id":"/#website","url":"/","name":"Dennis Oliver Kubitza","description":"Homepage","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"de"}]}</script>
+	<!-- / Yoast SEO plugin. -->
 
-    /* Social Media Icons */
-    .fa {
-      padding: 15px;
-      font-size: 30px;
-      width: 50px;
-      text-align: center;
-      text-decoration: none;
-      margin: 5px 2px;
-      border-radius: 50%;
-      background: #333;
-      color: white;
-    }
-    .fa:hover {
-      background: #555;
-    }
 
-    /* Form Styles */
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      resize: vertical;
-    }
-    label {
-      padding: 12px 0;
-      display: inline-block;
-    }
-    input[type=submit] {
-      background-color: #4CAF50;
-      color: white;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    input[type=submit]:hover {
-      background-color: #45a049;
-    }
-
-    /* Layout Helpers */
-    .container {
-      border-radius: 5px;
-      background-color: #f2f2f2;
-      padding: 20px;
-      margin-bottom: 20px;
-    }
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* Gallery Tiles (Courses Section) */
-    div.gallery {
-      margin: 5px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      float: left;
-      width: 32%;
-      min-height: 550px;
-      min-width: 300px;
-      background: white;
-      border-radius: 8px;
-      transition: box-shadow 0.3s ease;
-    }
-    div.gallery:hover {
-      border-color: #777;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    div.desc {
-      padding: 15px;
-      text-align: center;
-    }
-
-    /* Responsive */
-    @media screen and (max-width: 600px) {
-      .col-25, .col-75, input[type=submit], div.gallery {
-        width: 100%;
-        margin-top: 0;
-      }
-    }
-
-  </style>
-
+<link rel="alternate" type="application/rss+xml" title="Dennis Oliver Kubitza » Feed" href="/feed/">
+<link rel="alternate" type="application/rss+xml" title="Dennis Oliver Kubitza » Kommentar-Feed" href="/comments/feed/">
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=%2F&amp;format=xml">
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #FFFFFF;--wp--preset--color--contrast: #111111;--wp--preset--color--accent-1: #FFEE58;--wp--preset--color--accent-2: #F6CFF4;--wp--preset--color--accent-3: #503AA8;--wp--preset--color--accent-4: #686868;--wp--preset--color--accent-5: #FBFAF3;--wp--preset--color--accent-6: color-mix(in srgb, currentColor 20%, transparent);--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 0.875rem;--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.2rem) * 0.196), 1.125rem);--wp--preset--font-size--large: clamp(1.125rem, 1.125rem + ((1vw - 0.2rem) * 0.392), 1.375rem);--wp--preset--font-size--x-large: clamp(1.75rem, 1.75rem + ((1vw - 0.2rem) * 0.392), 2rem);--wp--preset--font-size--xx-large: clamp(2.15rem, 2.15rem + ((1vw - 0.2rem) * 1.333), 3rem);--wp--preset--font-family--manrope: Manrope, sans-serif;--wp--preset--font-family--fira-code: "Fira Code", monospace;--wp--preset--spacing--20: 10px;--wp--preset--spacing--30: 20px;--wp--preset--spacing--40: 30px;--wp--preset--spacing--50: clamp(30px, 5vw, 50px);--wp--preset--spacing--60: clamp(30px, 7vw, 70px);--wp--preset--spacing--70: clamp(50px, 7vw, 90px);--wp--preset--spacing--80: clamp(70px, 10vw, 140px);--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 1.2rem;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 1.2rem;}:root :where(.is-layout-grid){gap: 1.2rem;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:root :where(.wp-block-columns-is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.wp-block-columns-is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-flow) > *{margin-block-start: var(--wp--preset--spacing--50);margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.wp-block-columns-is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-constrained) > *{margin-block-start: var(--wp--preset--spacing--50);margin-block-end: 0;}:root :where(.wp-block-columns-is-layout-flex){gap: var(--wp--preset--spacing--50);}:root :where(.wp-block-columns-is-layout-grid){gap: var(--wp--preset--spacing--50);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+<link rel="stylesheet" id="oxygen-aos-css" href="/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.css?ver=6.9.4" media="all">
+<link rel="stylesheet" id="oxygen-css" href="/wp-content/plugins/oxygen/component-framework/oxygen.css?ver=4.9.5.9" media="all">
+<style id="oxymade-inline-css">
+:root {--primary-color: #2d4ddb;--dark-color: #060b23;--paragraph-color: #444444;--border-color: #dcdfe4;--placeholder-color: #edf0f9;--background-color: #f9fafb;--secondary-color: #33335c;--light-color: #ffffff;--paragraph-alt-color: #d1d5db;--border-alt-color: #47476b;--placeholder-alt-color: #faf5f0;--background-alt-color: #f5f5f5;--tertiary-color: #eb5757;--black-color: #191919;--white-color: #ffffff;--success-color: #38a169;--warning-color: #d69e2e;--error-color: #e53e3e;--success-light-color: #f0fff4;--warning-light-color: #fffff0;--error-light-color: #fff5f5;--extra-color-1: #FFFFFF;--extra-color-2: #FFFFFF;--extra-color-3: #FFFFFF;--extra-color-4: #FFFFFF;--primary-hover-color: rgba(31, 58, 183, 1);--secondary-hover-color: rgba(32, 32, 59, 1);--primary-alt-color: rgba(220, 225, 249, 1);--secondary-alt-color: rgba(228, 228, 240, 1);--primary-alt-hover-color: rgba(176, 187, 241, 1);--secondary-alt-hover-color: rgba(195, 195, 222, 1);--primary-rgb-vals: 45, 77, 219;--secondary-rgb-vals: 51, 51, 92;--transparent-color: transparent;--dark-rgb-vals: 6, 11, 35;--paragraph-rgb-vals: 68, 68, 68;--tertiary-rgb-vals: 235, 87, 87;--black-rgb-vals: 25, 25, 25;--success-rgb-vals: 56, 161, 105;--warning-rgb-vals: 214, 158, 46;--error-rgb-vals: 229, 62, 62;--extra-color-1-rgb-vals: 255, 255, 255;--extra-color-2-rgb-vals: 255, 255, 255;--extra-color-3-rgb-vals: 255, 255, 255;--extra-color-4-rgb-vals: 255, 255, 255;}
+html { font-size: 62.5%; } body { font-size: 1.7rem; }
+:root {--desktop-text-base: 1.7;--responsive-spacing-ratio: 70;--step-gap-px: 4;--mobile-text-base: 1.6;--responsive-text-ratio: 0.7;--smallest-font-size: 1.5;--h-font-weight: 700;--desktop-type-scale-ratio: 1.25;--mobile-type-scale-ratio: 1.2;--viewport-min: 48;--viewport-max: 112;--lh-65-150: 0.98;--lh-49-64: 1;--lh-37-48: 1.1;--lh-31-36: 1.2;--lh-25-30: 1.33;--lh-21-24: 1.45;--lh-17-20: 1.54;--lh-13-16: 1.68;--desktop-h6: 2.125;--desktop-h5: 2.65625;--desktop-h4: 3.3203125;--desktop-h3: 4.150390625;--desktop-h2: 5.18798828125;--desktop-h1: 6.4849853515625;--desktop-hero: 8.1062316894531;--mobile-h6: 1.92;--mobile-h5: 2.304;--mobile-h4: 2.7648;--mobile-h3: 3.31776;--mobile-h2: 3.981312;--mobile-h1: 4.7775744;--mobile-hero: 5.73308928;--desktop-xs: 1.275;--desktop-sm: 1.4875;--desktop-base: 1.7;--desktop-lg: 1.9125;--desktop-xl: 2.125;--desktop-2xl: 2.55;--desktop-3xl: 2.975;--desktop-4xl: 3.825;--desktop-5xl: 4.675;--desktop-6xl: 5.95;--desktop-7xl: 7.225;--desktop-8xl: 9.775;--desktop-9xl: 11.9;--mobile-xs: 0.8925;--mobile-sm: 1.04125;--mobile-base: 1.19;--mobile-lg: 1.33875;--mobile-xl: 1.4875;--mobile-2xl: 1.785;--mobile-3xl: 2.0825;--mobile-4xl: 2.6775;--mobile-5xl: 3.2725;--mobile-6xl: 4.165;--mobile-7xl: 5.0575;--mobile-8xl: 6.8425;--mobile-9xl: 8.33;--lh-hero: 0.99;--lh-h1: 1.04;--lh-h2: 1.05;--lh-h3: 1.15;--lh-h4: 1.265;--lh-h5: 1.39;--lh-h6: 1.495;--lh-xs: 1.68;--lh-sm: 1.68;--lh-base: 1.61;--lh-lg: 1.61;--lh-xl: 1.565;--lh-2xl: 1.435;--lh-3xl: 1.39;--lh-4xl: 1.215;--lh-5xl: 1.15;--lh-6xl: 1.05;--lh-7xl: 0.99;--lh-8xl: 0.98;--lh-9xl: 0.98;}
+/*# sourceURL=oxymade-inline-css */
+</style>
+<script src="/wp-content/plugins/oxygen/component-framework/vendor/aos/aos.js?ver=1" id="oxygen-aos-js"></script>
+<script src="/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<link rel="https://api.w.org/" href="/wp-json/"><link rel="alternate" title="JSON" type="application/json" href="/wp-json/wp/v2/pages/72"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.9.4">
+<link rel="shortlink" href="/">
+<style>.oxygen-oxy-ou_countdown-oucd_timezone .select2-container--default .select2-selection--single .select2-selection__rendered{color: #fff!important;}</style><style class="wp-fonts-local">
+@font-face{font-family:Manrope;font-style:normal;font-weight:200 800;font-display:fallback;src:url('/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/manrope/Manrope-VariableFont_wght.woff2') format('woff2');}
+@font-face{font-family:"Fira Code";font-style:normal;font-weight:300 700;font-display:fallback;src:url('/wp-content/themes/oxygen-is-not-a-theme/assets/fonts/fira-code/FiraCode-VariableFont_wght.woff2') format('woff2');}
+</style>
+<link rel="icon" href="/wp-content/uploads/2026/03/cropped-icon_no_bg_big-32x32.png" sizes="32x32">
+<link rel="icon" href="/wp-content/uploads/2026/03/cropped-icon_no_bg_big-192x192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/wp-content/uploads/2026/03/cropped-icon_no_bg_big-180x180.png">
+<meta name="msapplication-TileImage" content="/wp-content/uploads/2026/03/cropped-icon_no_bg_big-270x270.png">
+<link rel="stylesheet" id="oxygen-cache-72-css" href="/wp-content/uploads/oxygen/css/72.css?cache=1774906960&amp;ver=6.9.4" media="all">
+<link rel="stylesheet" id="oxygen-universal-styles-css" href="/wp-content/uploads/oxygen/css/universal.css?cache=1774906960&amp;ver=6.9.4" media="all">
+<!-- END OF WP_HEAD() -->
 </head>
-
-<body>
-
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-blue-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
-  <div class="w3-bar-block" style="margin-top:20px;">
-    <h1>Welcome</h1><hr>
-
-    <a href="#abo" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">About</a>
-    <a href="#cou" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Courses</a>
-    <a href="#pub" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Publications</a>
-    <hr>
-
-    Also find me on:<br>
-    <a href="https://www.linkedin.com/in/dennis-oliver-kubitza-6675a1b7/" class="w3-bar-item w3-button w3-hover-white fab fa-linkedin"> LinkedIn</a>
-    <a href="https://github.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-github"> GitHub</a>
-    <a href="https://gitlab.com/DennisKubitza" class="w3-bar-item w3-button w3-hover-white fab fa-gitlab"> GitLab</a>
-    <a href="https://discordapp.com/users/xxxx/" class="w3-bar-item w3-button w3-hover-white fab fa-discord"> Discord</a>
-    <a href="https://www.researchgate.net/profile/Dennis_Kubitza" class="w3-bar-item w3-button w3-hover-white fab fa-researchgate"> ResearchGate</a>
-    <a href="https://scholar.google.com/citations?user=3CS6nfcAAAAJ&hl=en" class="w3-bar-item w3-button w3-hover-white fab fa-google"> Google Scholar</a>
-  </div>
-</nav>
-
-<!-- Top menu for small screens -->
-<header class="w3-container w3-top w3-hide-large w3-blue-grey w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-blue-grey w3-margin-right" onclick="w3_open()">☰</a>
-  <span>Homepage</span>
-</header>
-
-<!-- Overlay for closing sidebar -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- Main Content -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
+<body class="home wp-singular page-template-default page page-id-72 wp-embed-responsive wp-theme-oxygen-is-not-a-theme  oxygen-body">
 
 
-  <!-- About -->
-<div class="w3-container" id="abo" style="margin-top:60px;">
-  <div class="w3-container w3-center" style="margin-top:10px;">
-    <div class="w3-panel w3-leftbar w3-round-xxlarge" style="background: linear-gradient(135deg, #378dbf, #2b6d99); border-left: 5px solid #80CFFF; display: inline-block; max-width: 600px; padding: 30px 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
-
-      <img src="sources/design/sharpened.jpg" alt="Dennis Oliver Kubitza" style="width:100%; height:auto; border-radius: 10%; margin-bottom: 15px; box-shadow: 0 2px 10px rgba(0,0,0,0.3);">
-
-      <h3 class="w3-xxlarge w3-text-white" style="margin-top:10px; margin-bottom:10px;"><b>Seeking New Opportunities!</b></h3>
-
-      <p class="w3-large w3-text-white" style="margin:10px 0;">Starting Fall 2025, I'm excited for fresh professional challenges.<br>Download my CV and let's connect!</p>
-
-      <a href="sources/content/CV_Dennis_Kubitza.pdf" download class="w3-button w3-white w3-round-xlarge w3-hover-light-grey" style="margin-top:15px; padding:10px 24px;">
-        <i class="fa fa-download"></i> Download CV
-      </a>
-
-    </div>
-  </div>
 
 
-    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>About</b></h1>
-    <hr style="width:50px;border:5px solid #607d8b" class="w3-round">
+						<header id="_header-212-52" class="oxy-header-wrapper oxy-sticky-header  oxy-header shadow"><div id="_header_row-1687-72" class="oxy-header-row gap-6 p-4"><div class="oxy-header-container"><div id="_header_left-1688-72" class="oxy-header-left"><a id="link-2213-72" class="ct-link" href="#Dennis"><h1 id="headline-1853-72" class="ct-headline"><span id="span-1855-72" class="ct-span">Dennis</span> Kubitza</h1></a></div><div id="_header_center-1690-72" class="oxy-header-center"><div id="div_block-1876-72" class="ct-div-block gap-6 gap-8"><a id="link-1870-72" class="ct-link text-button" href="#About" target="_self"><div id="text_block-1871-72" class="ct-text-block">About</div></a><a id="link-1872-72" class="ct-link text-button" href="#Research" target="_self"><div id="text_block-1873-72" class="ct-text-block">Research</div></a><a id="link-1867-72" class="ct-link text-button" href="#Courses" target="_self"><div id="text_block-1869-72" class="ct-text-block">Course Material</div></a></div></div><div id="_header_right-1691-72" class="oxy-header-right"><a id="link-1862-72" class="ct-link gap-2 btn-primary button-blue" href="http://www.linkedin.com/in/dennis-oliver-kubitza-6675a1b7" target="_blank"><div id="text_block-1863-72" class="ct-text-block font-bold">Contact</div><div id="fancy_icon-2112-72" class="ct-fancy-icon"><svg id="svg-fancy_icon-2112-72"><use xlink:href="#FontAwesomeicon-linkedin-square"></use></svg></div></a></div></div></div></header>
+				<script type="text/javascript">
+			jQuery(document).ready(function() {
+				var selector = "#_header-212-52",
+					scrollval = parseInt("1");
+				if (!scrollval || scrollval < 1) {
+											jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+						jQuery(selector).addClass("oxy-sticky-header-active");
+									}
+				else {
+					var scrollTopOld = 0;
+					jQuery(window).scroll(function() {
+						if (!jQuery('body').hasClass('oxy-nav-menu-prevent-overflow')) {
+							if (jQuery(this).scrollTop() > scrollval 
+																) {
+								if (
+																		!jQuery(selector).hasClass("oxy-sticky-header-active")) {
+									if (jQuery(selector).css('position')!='absolute') {
+										jQuery("body").css("margin-top", jQuery(selector).outerHeight());
+									}
+									jQuery(selector)
+										.addClass("oxy-sticky-header-active")
+																	}
+							}
+							else {
+								jQuery(selector)
+									.removeClass("oxy-sticky-header-fade-in")
+									.removeClass("oxy-sticky-header-active");
+								if (jQuery(selector).css('position')!='absolute') {
+									jQuery("body").css("margin-top", "");
+								}
+							}
+							scrollTopOld = jQuery(this).scrollTop();
+						}
+					})
+				}
+			});
+		</script><section id="section-1819-72" class=" ct-section p-2"><div class="ct-section-inner-wrap"><div id="text_block-1835-72" class="ct-text-block "><b>Note: </b>This homepage is dedicated to my personal, non-professional academic work: research and teaching. For professional inquiries, please visit the agency website.<br></div></div></section><section id="Dennis" class=" ct-section bg items-center"><div class="ct-section-inner-wrap"><div id="div_block-1883-72" class="ct-div-block w-full grid grid-cols-2 lg-grid-cols-1 lg-w-3by4 md-w-full gap-8 items-center pt-20"><div id="div_block-1884-72" class="ct-div-block "><h1 id="headline-1885-72" class="ct-headline color-dark h1 mb-4">Dennis Oliver Kubitza<br></h1><h2 id="headline-2004-72" class="ct-headline color-dark mb-4 h4 text-color-green">Data Scientist • Researcher • Founder <br></h2><div id="text_block-1886-72" class="ct-text-block text-xl mb-8 text-gray">Hi. I am Dennis. I am a <b>Computer Scientist</b> with a background in <b>statistic</b> and <b>economics</b>. Since 2022 I am a <b>PhD Candidate</b> in Regional Economics &amp; Labor Market Statistics at Maastricht University. <br>In 2026 I founded the <b>Dr. Lisa Baum &amp; Dennis Kubitza GbR</b>, a full service online marketing agency. This page is about me and my research. If you are interested in my agency, visit the agency homepage:</div><div id="div_block-2428-72" class="ct-div-block fade-left"><a id="link-2429-72" class="ct-link gap-2 button-orange" href="http://baum-kubi.com/"><div id="text_block-2430-72" class="ct-text-block font-bold">Visit Agency Website </div><div id="fancy_icon-2431-72" class="ct-fancy-icon"><svg id="svg-fancy_icon-2431-72"><use xlink:href="#FontAwesomeicon-external-link"></use></svg></div></a></div></div></div></div></section><section id="About" class=" ct-section items-center bg"><div class="ct-section-inner-wrap"><div id="sectionasd" class="ct-div-block w-full p-8"><h3 id="heading-x" class="ct-headline h3 color-dark">About Me<br></h3></div><div id="div_block-1896-72" class="ct-div-block w-full grid grid-cols-5 gap-8 lg-grid-cols-1"><div id="div_block-1897-72" class="ct-div-block col-span-3 lg-col-span-1 p-8"><div id="text_block-1899-72" class="ct-text-block text-lg mb-8 mt-4"><b>Over the past few years, I have programmed software, gave programming courses for statistical software, analyzed labor market data, and managed research projects. </b><br></div><div id="div_block-2094-72" class="ct-div-block w-full"><img id="image-2095-72" alt="Dennis Kubitza with his laptop working outside" src="/wp-content/uploads/2026/03/Dennis_kubitza-768x435.webp" class="ct-image" srcset="/wp-content/uploads/2026/03/Dennis_kubitza-768x435.webp 768w, /wp-content/uploads/2026/03/Dennis_kubitza-300x170.webp 300w" sizes="(max-width: 768px) 100vw, 768px"><div id="text_block-2113-72" class="ct-text-block mb-4">Fig. 1: The author with his mobile work setup enjoying the mild German summer of 2025.</div></div><div id="text_block-2084-72" class="ct-text-block text-lg mt-4"><u style="font-weight: bold;">Data Analysis &amp; Research (2021–2025)</u><span style="font-weight: bold;">:</span> Worked at the Federal Institute for Vocational Education and Training (BIBB). I ran statistical economic analyses on labor market data.<br><br><b><b><u>Software Development (2019–2021)</u>:</b> </b>Worked as a Research Engineer at Fraunhofer IAIS: Built Java connectors, User Interfaces, managed some projects and aquired new ones.<br><br><b style="font-weight: bold;"><u>Education (2012 - 2019)</u>: </b>I earned an M.Sc. in Computer Science , as well as, B.Sc. degrees in Economics and Mathematics from the University of Bonn.<br><br><b><b><u>Tech Skills:</u></b> </b>I code in R, Python, Java, HTML/CSS/React, and SQL. I also set up and use tools like Docker, Git, WordPress, and different CRM systems.<br><br></div><div id="div_block-2465-72" class="ct-div-block w-full"><a id="AboveResearch" class="ct-link btn-m btn-primary gap-2" href="https://dennis-kubitza.com/sources/content/CV_Dennis_Kubitza.pdf" target="_blank"><div id="text_block-1901-72" class="ct-text-block">Download my CV</div><div id="fancy_icon-2033-72" class="ct-fancy-icon icon-2xl-dark"><svg id="svg-fancy_icon-2033-72"><use xlink:href="#FontAwesomeicon-download"></use></svg></div></a></div></div><div id="div_block-1903-72" class="ct-div-block grid grid-cols-1 lg-grid-cols-2 md-grid-cols-1 col-span-2 lg-col-span-1"><div id="div_block-1904-72" class="ct-div-block card-relaxed shadow-md sunny"><h5 id="headline-1907-72" class="ct-headline h5 color-primary mb-4 text-color-green">Current Positions</h5><div id="text_block-1908-72" class="ct-text-block text-lg text-gray">PhD Candidate at Maastricht University &amp; Research Employee at BIBB<br><br>Online Marketer and Web Developer at Dr. Lisa Baum &amp; Dennis Kubitza GbR</div></div><div id="div_block-1909-72" class="ct-div-block card-relaxed shadow-md sunny"><h5 id="headline-1912-72" class="ct-headline h5 mb-4 text-color-orange">Former Affiliations</h5><div id="text_block-1913-72" class="ct-text-block text-lg text-gray">RISA - Junior Research Group at Bundesinstitut für Berufsbildung<br><br>Enterprise Infromation Systems (EIS) Departement at Fraunhofer IAIS</div></div><div id="div_block-2466-72" class="ct-div-block card-relaxed shadow-md sunny"><h5 id="headline-2467-72" class="ct-headline h5 mb-4 text-color-orange text-color-lila">Interests &amp; Hobby's</h5><div id="text_block-2468-72" class="ct-text-block text-lg text-gray">Climbing, surfing, sailing, hiking, travelling, strategic board games and visiting my local cinema<br><br></div></div></div></div></div></section><section id="Agency" class=" ct-section shadow p-2 p-8"><div class="ct-section-inner-wrap"><div id="div_block-2481-72" class="ct-div-block p-4" data-aos="zoom-out" data-aos-duration="2400" data-aos-once="true"><div id="div_block-2482-72" class="ct-div-block gap-2 p-2"><div id="fancy_icon-2483-72" class="ct-fancy-icon"><svg id="svg-fancy_icon-2483-72"><use xlink:href="#Lineariconsicon-users"></use></svg></div><div id="text_block-2484-72" class="ct-text-block cyan uppercase font-semibold">NEWLY FOUNDED IN 2026</div></div><div id="div_block-2485-72" class="ct-div-block "><h2 id="headline-2486-72" class="ct-headline">Dr. Lisa Baum &amp; Dennis Kubitza GbR</h2></div><div id="div_block-2487-72" class="ct-div-block"><div id="text_block-2488-72" class="ct-text-block font-semibold pt-1">Online Marketing Agency | Data-Driven Solutions | Web Automation</div></div><div id="div_block-2494-72" class="ct-div-block p-4 fade-left"><a id="link-2495-72" class="ct-link gap-2 button-orange" href="http://baum-kubi.com/"><div id="text_block-2496-72" class="ct-text-block font-bold">Visit Agency Website </div><div id="fancy_icon-2497-72" class="ct-fancy-icon"><svg id="svg-fancy_icon-2497-72"><use xlink:href="#FontAwesomeicon-external-link"></use></svg></div></a></div></div></div></section><section id="Research" class=" ct-section items-center bg"><div class="ct-section-inner-wrap"><h3 id="headingresa" class="ct-headline h3 color-dark mb-4 text-center">My Research</h3><div id="text_block-1935-72" class="ct-text-block text-lg max-w-md text-center mb-8">As I have worked not only in one discipline but in several, my research output is not limited to publications in academic journals, but also includes whitepapers, conference proceedings, and short articles.</div><div id="div_block-1936-72" class="ct-div-block w-3by4 grid grid-cols-1 gap-4 mb-8 md-w-full fade-in"><div id="div_block-2155-72" class="ct-div-block w-full"><h4 id="headline-2163-72" class="ct-headline h4 blue-text">Journal Articles</h4></div><div id="div_block-1937-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-cyan"><div id="_toggle-1938-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2217-72" class="ct-text-block text-lg font-bold mr-12">Another one rides the bus—Moving versus commuting decisions during the transition to higher education (with <a href="https://kwessling.net/" target="_blank">K. Weßling</a>; Review of Regional Research; 2025)</div>			</div>
+		</div><div id="text_block-1940-72" class="ct-text-block max-w-md mr-14 p-8"><b>Abstract </b>The present study explores students’ decisions to either relocate or commute to their place of study depending on the availability of student tickets. By leveraging regional variations in the coverage of these subsidized public transport tickets, we explore whether their availability decreases students’ likelihood of moving. We investigate how the importance of subsidized tickets changes with commuting time and how their relevance varies based on students’ financial resources, social backgrounds, and risk attitudes. To do so, we use the MESARAS 2013 (Mobility, Expectations, Self-Assessment, and Risk Attitude of Students) survey, which queries university entrants in the field of economics at seven German universities. We link locational identifiers from the survey with the Google Distance Matrix API to assess commuting times and regional administrative data. Our logistic regression models suggest that the availability of student tickets may decrease the likelihood of moving. The association appears to be less pronounced as commuting time increases and seems to depend on parental academic status as well as students’ budget. Thus, our study offers three contributions: First, we provide policy-relevant evidence on the importance of affordable public transportation. Second, we address (social) inequalities in the moving versus commuting decision. Third, we demonstrate how accurate spatial modeling of commuting times and integration of survey data with external data sources benefits socio-spatial analysis.</div></div><div id="div_block-2165-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-cyan"><div id="_toggle-2166-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2167-72" class="ct-text-block text-lg font-bold mr-12">Match Me Up Before I Go-Go!—Matching Functions for Spatially Connected VET Labor Markets (forthcoming; 2026)</div>			</div>
+		</div><div id="text_block-2168-72" class="ct-text-block max-w-md mr-14 p-8"><b>Abstract </b>Local labor markets in Germany are interconnected through mobile workers who commute or migrate across borders. Therefore, the aggregated number of new matches between employers and employees in one region is influenced by spillovers from neighboring markets, but might also be disproportionately higher due to easier access to suitable jobs in agglomerated areas. Vocational education and training (VET) students in company training, so called apprentices, are younger and therefore less mobile than the general workforce, suggesting that regional spillovers may be less pronounced when looking at VET labor markets. In addition, occupational heterogeneities in the spatial distribution of employers might further amplify or decrease these spillovers. This paper provides the first estimates of spatial matching functions for VET students in general and for multiple profession groups. Using a matching function model with spatially lagged stocks of applicants and vacancies, it analyses efficiency, elasticities, regional influences, and spatial spillovers. To do so, it develops a novel set of spatial weights and ways to measure agglomeration. The findings show that matching efficiency for VET is higher in more agglomerated regions and that measurable spillovers do exist, even for the group of less long-distance mobile adolescents. This underscores the importance of accurate spatial modeling: only indices based on realistic travel times or commuting data show these influences. Finally, this paper finds significantly lower elasticities in the stock of unemployed applicants for regions that are well connected to their surroundings, leading to a more balanced matching process.</div></div><div id="div_block-2225-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-cyan"><div id="_toggle-2226-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2227-72" class="ct-text-block text-lg font-bold mr-12">Whole Lotta Training—Studying School-to-Training Transitions by Training Artificial Neural Networks (with <a href="https://kwessling.net/" target="_blank">K. Weßling</a>; forthcoming; 2026)</div>			</div>
+		</div><div id="text_block-2228-72" class="ct-text-block max-w-md mr-14 p-8"><b>Abstract </b>At the end of compulsory education, the decision to either continue school or pursue training represents a critical juncture widely analyzed in the social sciences. Choices for or against a career direction are shaped by interdependent individual, institutional, and regional-level factors. To disentangle these relationships, researchers have typically relied on (multilevel) regression techniques, focusing on mediating and moderating effects among distinct predictors. In this study, we employ artificial neural networks (ANNs) to analyze survey data from the German National Educational Panel Study, enriched with regional indicators. Focusing on school-to-vocational training transitions as established research topics in social sciences we build on recent studies that demonstrate how machine learning methods can identify complex, non-linear, and higher-order patterns among explanatory variables. To enhance the interpretability of complex patterns based on ANNs, we employ explainable artificial intelligence (XAI) techniques, specifically Shapley Additive exPlanations (SHAP) and Rule Extraction (RE) algorithms. These methods allow us to identify multiple non-linear interactions within and across analytical levels. We argue that the adoption of ANNs in the social sciences provides the potential to inspire new substantive research questions, generates novel insights into established relationships, and makes complex patterns of influence more accessible. </div></div></div><div id="div_block-2235-72" class="ct-div-block w-3by4 grid grid-cols-1 gap-4 mb-8 md-w-full"><div id="div_block-2236-72" class="ct-div-block w-full"><h4 id="headline-2237-72" class="ct-headline h4 text-color-orange mt-4">Conference Proceedings &amp; White Papers</h4></div><div id="div_block-2238-72" class="ct-div-block border-orange"><div id="_toggle-2239-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2240-72" class="ct-text-block text-lg font-bold mr-12">Mobility data space—first implementations and business opportunities (with H.Drees, J.Lipp, S.Pretzsch, C.S. Langdon; ITS World Congress; 2021)</div>			</div>
+		</div><div id="text_block-2241-72" class="ct-text-block max-w-md mr-14 p-8"><b><b>Abstract</b> </b>Data spaces are open and decentral ecosystems, which ensure a trustworthy, safe and secure data exchange. Within the mobility sector, trusted data exchange and processing are emerging as key enablers of digitalization and new mobility offerings. Improved services and new business opportunities, such as more seamless travel with intermodal solutions, for example, require a willingness of stakeholders to share data, which, in turn, depends on harmonized and commonly accepted solutions to govern such data exchange. Fortunately, a first implementation, the Mobility Data Space, is untying this knot by adopting data space concepts from the International Data Spaces Association. Core components complement the decentral concept and foster discoverability, accessibility, interoperability, and trustworthiness. In a German project, a minimal viable demonstrator has been implemented, which includes core components, various data sources and first applications. It proves the feasibility of the data space concepts for the mobility sector and paves the way for its business evolution.</div></div><div id="div_block-2312-72" class="ct-div-block border-orange"><div id="_toggle-2313-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2314-72" class="ct-text-block text-lg font-bold mr-12">GDPR Compliant Multi-Application Data Governance: Enhancing the Open Integration Hub with IDS and SOLID (with M.Böckmann, S.Höffler, J.Knoop, H.Schmidt; ITS World Congress; 2021)</div>			</div>
+		</div><div id="text_block-2315-72" class="ct-text-block max-w-md mr-14 p-8"><b><b>Abstract</b> </b>There is an enormous value in gathering and processing decentralised data occurrences in traffic and mobility systems. Exchanging and integrating such data requires a trustworthy infrastructure and mechanisms to protect shared information. The commercial usage of personal data often needs to comply with special restrictions like GDPR. Small and Medium Enterprises (SMEs) are challenged with this task, as they rely on external technologies, when processing and collecting information from location-based services, floating car data, etc. Especially in the mobility domain, new data driven Use Cases are unthinkable without including protection worthy personal data. In this contribution we analyse how Data Governance Frameworks like SOLID or the International Data Spaces usage<br>policies can be reused to leverage open-source Data Integration Frameworks like the Open Integration Hub (OIH) for GDPR compliant and trustworthy data processing of sensitive data.</div></div><div id="div_block-2246-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-cyan border-orange"><div id="_toggle-2247-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2248-72" class="ct-text-block text-lg font-bold mr-12">Specification: IDS Meta Data Broker v1.0 (with S Bader, F Bruckner, G Böge, J Langkau, R Nagel, 2020)</div>			</div>
+		</div><div id="text_block-2249-72" class="ct-text-block max-w-md mr-14 p-8"><br><b><b>Abstract</b> This document describes the minimal features of an IDS Meta Data Broker, as an index-service running in conjunction with an IDS Connector. The description of the IDS Connector itself is not part of this document. This document does not describe data brokerage functionality for the International Data Spaces, but Meta Data Brokerage.<br>This document contains the specification of the IDS Meta Data Broker and acts as a foundation for the Certification criteria for the IDS Meta Data Broker. In addition to the minimal requirements, also two advanced Broker Profiles are described, enhancing the standard Broker functionalities by improved information management and usage policies. </b></div></div><div id="div_block-2242-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-orange"><div id="_toggle-2243-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2244-72" class="ct-text-block text-lg font-bold mr-12">SemanGit: A Linked Dataset from git (with M.Böckmann, D.Graux; International Semantic Web Conference; 2019)</div>			</div>
+		</div><div id="text_block-2245-72" class="ct-text-block max-w-md mr-14 p-8"><b><b>Abstract</b> </b>The growing interest in free and open-source software which occurred over the last decades has accelerated the usage of versioning systems to help developers collaborating together in the same projects. As a consequence, specific tools such as git and specialized open-source on-line platforms gained importance. In this study, we introduce and share SemanGit which provides a resource at the crossroads of both Semantic Web and git web-based version control systems. SemanGit is actually the first collection of linked data extracted from GitHub based on a git ontology we designed and extended to include specific GitHub features. In this article, we present the dataset, describe the extraction process according to the ontology, show some promising analyses of the data and outline how SemanGit could be linked with external datasets or enriched with new sources to allow for more complex analyses.</div></div></div><div id="div_block-2280-72" class="ct-div-block w-3by4 grid grid-cols-1 gap-4 mb-8 md-w-full"><div id="div_block-2281-72" class="ct-div-block w-full"><h4 id="headline-2282-72" class="ct-headline h4 text-color-orange mt-4 text-color-lila">Short Articles</h4></div><div id="div_block-2283-72" class="ct-div-block border-lila"><div id="_toggle-2284-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2285-72" class="ct-text-block text-lg font-bold mr-12">Same same but different–Was Regionen mit Ausbildungswünschen und-chancen zu tun haben, und warum das nicht für jede/-n gilt (with K Wessling, J Detemple, D Kubitza, I Loll, N Theuer; Berufsbildung in Wissenschaft und Praxis; 2024)</div>			</div>
+		</div><div id="text_block-2286-72" class="ct-text-block max-w-md mr-14 p-8"><b><b>Abstract</b> </b>Der Beitrag befasst sich mit dem Zusammenhang zwischen Regionen und Ausbildung. Es wird einerseits aufgezeigt, dass nicht alle Merkmale einer Region gleichermaßen wichtig sind, wenn es darum geht zu erklären, was Ausbildungswünsche und-chancen von jungen Menschen beeinflusst. Andererseits wird dargelegt, dass regionale Merkmale nicht für alle jungen Menschen gleichermaßen wichtig sind und ihre Wirkung mit soziodemografischen oder persönlichen Eigenschaften variieren. Der Beitrag zielt darauf ab, Forschung und Praxis für diese selektive Bedeutung von regionalen Merkmalen für Ausbildungswünsche und-chancen zu sensibilisieren, um mit zielgruppenspezifischen (Beratungs-) Angeboten den Herausforderungen am</div></div><div id="div_block-2287-72" class="ct-div-block px-12 rounded-xl my-card zoom-in border-lila"><div id="_toggle-2288-72" class="oxy-toggle w-full p-4" data-oxy-toggle-initial-state="closed" data-oxy-toggle-active-class="toggle-2877-expanded">
+			<div class="oxy-expand-collapse-icon" href="#"></div>
+			<div class="oxy-toggle-content">
+                <div id="text_block-2289-72" class="ct-text-block text-lg font-bold mr-12">Towards Semantically Structuring GitHub. (with M.Böckmann, D.Graux; International Semantic Web Conference; 2019)</div>			</div>
+		</div><div id="text_block-2290-72" class="ct-text-block max-w-md mr-14 p-8"><b><b>Abstract</b> With the recent increase of open-source projects, tools have emerged to enable developers collaborating. Among these, git has received lots of attention and various on-line platforms have been created around this tool, hosting millions of projects. Recently, some of these platforms opened APIs to allow users questioning their public databases of open-source projects. Despite of the common protocol core, there are for now no common structures someone could use to link those sources of information. To tackle this, we propose the SemanGit ontology, the first ontology dedicated to the git protocol, which also describes GitHub’s features to show how it is extensible to encompass more git-based data sources. </b></div></div></div></div></section><section id="Courses" class=" ct-section bg items-center pb-12"><div class="ct-section-inner-wrap"><h3 id="headline-2319-72" class="ct-headline h3 color-dark mb-4 text-center">Course Material</h3><div id="text_block-2318-72" class="ct-text-block text-lg max-w-md text-center mb-8">From 2015 to 2020 I gave several programming courses for the Department of Economics of the university of Bonn. The Course Material is published in GitHub and accesible for further usage. Both courses can be tought as a 5-day or 3-day intensive course.</div><div id="div_block-1960-72" class="ct-div-block w-full grid grid-cols-2 lg-grid-cols-1 lg-w-3by4 md-w-full gap-16"><div id="div_block-1961-72" class="ct-div-block rounded-xl shadow-sm"><div id="div_block-2375-72" class="ct-div-block "><a id="div_block-1963-72" class="ct-link card-relaxed-2 text-gray flex-col" href="https://www.dropbox.com/scl/fo/sdcctr1b6do7753fk70cl/ANfABBaPFir7ddTGLBUpIMs?rlkey=wkyvgn6tjhkgwcs0hf5l6zab0&amp;e=1&amp;dl=0"><img id="image-1962-72" alt="The R-Programming language logo" src="/wp-content/uploads/2026/03/Rlogo-300x232.png" class="ct-image object-cover w-1by2" srcset="" sizes="(max-width: 300px) 100vw, 300px"><h5 id="headline-1964-72" class="ct-headline h5 color-dark mb-4">R Programming Language</h5><div id="text_block-1965-72" class="ct-text-block">The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. It was created by Matthias Duch and myself between 2016-2018. The course material is currently available on Dropbox and will be published on GitHub in the future.<br></div></a></div></div><div id="div_block-1966-72" class="ct-div-block rounded-xl shadow-sm"><div id="div_block-2380-72" class="ct-div-block shadow-md"><a id="div_block-1968-72" class="ct-link py-8 px-12 w-full centered card-relaxed-2 text-gray" href="https://github.com/DennisKubitza/LaTeX-Kurs" target="_blank"><img id="image-1967-72" alt="LaTeX Logo light" src="/wp-content/uploads/2026/03/LaTeX_logo.svg_-1-300x125.png" class="ct-image object-cover w-2by3" srcset="" sizes="(max-width: 300px) 100vw, 300px"><h5 id="headline-1969-72" class="ct-headline h5 color-dark mb-4">LaTeX beginner course</h5><div id="text_block-1970-72" class="ct-text-block">The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. The material was created by Max Kirchner for the Department of Mathematics and reworked heavily by Matthias Duch and myself between 2015-2019. </div></a></div></div></div></div></section><section id="section-1927-72" class=" ct-section items-center pt-8 bg"><div class="ct-section-inner-wrap"><div id="div_block-2355-72" class="ct-div-block horizontal items-center"><a id="link-2356-72" class="ct-link mr-6 button-blue" href="http://www.linkedin.com/in/dennis-oliver-kubitza-6675a1b7" target="_blank"><div id="fancy_icon-2357-72" class="ct-fancy-icon icon-lg-dark"><svg id="svg-fancy_icon-2357-72"><use xlink:href="#FontAwesomeicon-linkedin"></use></svg></div></a><a id="link-2358-72" class="ct-link mr-6 button-blue" href="https://scholar.google.com/citations?user=3CS6nfcAAAAJ&amp;hl=en" target="_blank"><div id="fancy_icon-2359-72" class="ct-fancy-icon icon-lg-dark"><svg id="svg-fancy_icon-2359-72"><use xlink:href="#FontAwesomeicon-google"></use></svg></div></a><a id="link-2437-72" class="ct-link button-blue" href="https://github.com/DennisKubitza" target="_self"><div id="fancy_icon-2438-72" class="ct-fancy-icon icon-lg-dark"><svg id="svg-fancy_icon-2438-72"><use xlink:href="#FontAwesomeicon-github-square"></use></svg></div></a></div><div id="div_block-2329-72" class="ct-div-block items-center text-center w-5by6 md-w-full"><div id="text_block-2330-72" class="ct-text-block color-paragraph mb-12 text-gray mt-2">Website for personal, non Commercial use by Dennis Oliver Kubitza.</div><div id="div_block-1928-72" class="ct-div-block grid gap-8 w-3by4 grid-cols-5 lg-w-full md-grid-cols-2"><a id="link_text-1932-72" class="ct-link-text font-semibold text-gray" href="http://www.dennis-kubitza.com/imprint" target="_self">Imprint</a></div></div></div></section>	<!-- WP_FOOTER -->
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/twentytwentyfive/*","/wp-content/themes/oxygen-is-not-a-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script>jQuery(document).on('click','a[href*="#"]',function(t){if(jQuery(t.target).closest('.wc-tabs').length>0){return}if(jQuery(this).is('[href="#"]')||jQuery(this).is('[href="#0"]')||jQuery(this).is('[href*="replytocom"]')){return};if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var e=jQuery(this.hash);(e=e.length?e:jQuery("[name="+this.hash.slice(1)+"]")).length&&(t.preventDefault(),jQuery("html, body").animate({scrollTop:e.offset().top-0},500))}});</script><style>.ct-FontAwesomeicon-download{width:0.92857142857143em}</style>
+<style>.ct-FontAwesomeicon-linkedin-square{width:0.85714285714286em}</style>
+<style>.ct-FontAwesomeicon-github-square{width:0.85714285714286em}</style>
+<style>.ct-FontAwesomeicon-linkedin{width:0.85714285714286em}</style>
+<style>.ct-FontAwesomeicon-google{width:0.85714285714286em}</style>
+<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"><defs><symbol id="FontAwesomeicon-download" viewbox="0 0 26 28"><title>download</title><path d="M20 21c0-0.547-0.453-1-1-1s-1 0.453-1 1 0.453 1 1 1 1-0.453 1-1zM24 21c0-0.547-0.453-1-1-1s-1 0.453-1 1 0.453 1 1 1 1-0.453 1-1zM26 17.5v5c0 0.828-0.672 1.5-1.5 1.5h-23c-0.828 0-1.5-0.672-1.5-1.5v-5c0-0.828 0.672-1.5 1.5-1.5h7.266l2.109 2.125c0.578 0.562 1.328 0.875 2.125 0.875s1.547-0.313 2.125-0.875l2.125-2.125h7.25c0.828 0 1.5 0.672 1.5 1.5zM20.922 8.609c0.156 0.375 0.078 0.812-0.219 1.094l-7 7c-0.187 0.203-0.453 0.297-0.703 0.297s-0.516-0.094-0.703-0.297l-7-7c-0.297-0.281-0.375-0.719-0.219-1.094 0.156-0.359 0.516-0.609 0.922-0.609h4v-7c0-0.547 0.453-1 1-1h4c0.547 0 1 0.453 1 1v7h4c0.406 0 0.766 0.25 0.922 0.609z"></path></symbol><symbol id="FontAwesomeicon-linkedin-square" viewbox="0 0 24 28"><title>linkedin-square</title><path d="M3.703 22.094h3.609v-10.844h-3.609v10.844zM7.547 7.906c-0.016-1.062-0.781-1.875-2.016-1.875s-2.047 0.812-2.047 1.875c0 1.031 0.781 1.875 2 1.875h0.016c1.266 0 2.047-0.844 2.047-1.875zM16.688 22.094h3.609v-6.219c0-3.328-1.781-4.875-4.156-4.875-1.937 0-2.797 1.078-3.266 1.828h0.031v-1.578h-3.609s0.047 1.016 0 10.844v0h3.609v-6.062c0-0.313 0.016-0.641 0.109-0.875 0.266-0.641 0.859-1.313 1.859-1.313 1.297 0 1.813 0.984 1.813 2.453v5.797zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"></path></symbol><symbol id="FontAwesomeicon-external-link" viewbox="0 0 28 28"><title>external-link</title><path d="M22 14.5v5c0 2.484-2.016 4.5-4.5 4.5h-13c-2.484 0-4.5-2.016-4.5-4.5v-13c0-2.484 2.016-4.5 4.5-4.5h11c0.281 0 0.5 0.219 0.5 0.5v1c0 0.281-0.219 0.5-0.5 0.5h-11c-1.375 0-2.5 1.125-2.5 2.5v13c0 1.375 1.125 2.5 2.5 2.5h13c1.375 0 2.5-1.125 2.5-2.5v-5c0-0.281 0.219-0.5 0.5-0.5h1c0.281 0 0.5 0.219 0.5 0.5zM28 1v8c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-2.75-2.75-10.187 10.187c-0.094 0.094-0.234 0.156-0.359 0.156s-0.266-0.063-0.359-0.156l-1.781-1.781c-0.094-0.094-0.156-0.234-0.156-0.359s0.063-0.266 0.156-0.359l10.187-10.187-2.75-2.75c-0.187-0.187-0.297-0.438-0.297-0.703 0-0.547 0.453-1 1-1h8c0.547 0 1 0.453 1 1z"></path></symbol><symbol id="FontAwesomeicon-github-square" viewbox="0 0 24 28"><title>github-square</title><path d="M8.109 18.75v0c0.031-0.047 0.016-0.141-0.047-0.203-0.078-0.063-0.172-0.078-0.219-0.031-0.031 0.047-0.016 0.141 0.047 0.203 0.078 0.063 0.172 0.078 0.219 0.031zM7.672 18.109c-0.047-0.063-0.125-0.094-0.187-0.063-0.047 0.031-0.047 0.125 0 0.187 0.063 0.078 0.141 0.109 0.187 0.078v0c0.047-0.031 0.047-0.125 0-0.203zM7.031 17.484v0c0.016-0.031-0.016-0.094-0.078-0.125-0.047-0.016-0.109-0.016-0.125 0.031-0.031 0.047 0 0.094 0.063 0.125 0.063 0.016 0.125 0.016 0.141-0.031zM7.359 17.844v0c0.031-0.031 0.031-0.109-0.031-0.156-0.047-0.063-0.125-0.078-0.156-0.047-0.047 0.047-0.031 0.109 0.016 0.172 0.047 0.047 0.125 0.078 0.172 0.031zM8.703 19.016v0c0.016-0.063-0.047-0.141-0.141-0.172s-0.172 0-0.203 0.063c-0.016 0.063 0.047 0.141 0.141 0.172s0.172 0 0.203-0.063zM9.359 19.063v0c0-0.063-0.078-0.125-0.187-0.125-0.094 0-0.156 0.063-0.156 0.125s0.078 0.125 0.172 0.125 0.172-0.063 0.172-0.125zM9.969 18.953v0c-0.016-0.063-0.109-0.094-0.203-0.078s-0.156 0.078-0.141 0.141 0.094 0.109 0.187 0.094 0.156-0.094 0.156-0.156zM20 14c0-4.422-3.578-8-8-8s-8 3.578-8 8c0 3.531 2.297 6.531 5.469 7.594 0.406 0.078 0.547-0.172 0.547-0.391 0-0.187 0-0.812-0.016-1.484 0 0-2.219 0.484-2.688-0.953 0 0-0.359-0.922-0.891-1.156 0 0-0.719-0.5 0.063-0.5 0 0 0.781 0.063 1.219 0.828 0.703 1.234 1.875 0.875 2.328 0.672 0.078-0.516 0.281-0.875 0.516-1.078-1.781-0.203-3.656-0.891-3.656-3.953 0-0.875 0.313-1.578 0.828-2.141-0.078-0.203-0.359-1.016 0.078-2.125 0.672-0.203 2.203 0.828 2.203 0.828 0.641-0.187 1.313-0.266 2-0.266s1.359 0.078 2 0.266c0 0 1.531-1.031 2.203-0.828 0.438 1.109 0.156 1.922 0.078 2.125 0.516 0.562 0.828 1.266 0.828 2.141 0 3.078-1.875 3.75-3.656 3.953 0.281 0.25 0.547 0.734 0.547 1.484 0 1.062-0.016 1.922-0.016 2.188 0 0.219 0.141 0.469 0.547 0.391 3.172-1.062 5.469-4.062 5.469-7.594zM24 6.5v15c0 2.484-2.016 4.5-4.5 4.5h-15c-2.484 0-4.5-2.016-4.5-4.5v-15c0-2.484 2.016-4.5 4.5-4.5h15c2.484 0 4.5 2.016 4.5 4.5z"></path></symbol><symbol id="FontAwesomeicon-linkedin" viewbox="0 0 24 28"><title>linkedin</title><path d="M5.453 9.766v15.484h-5.156v-15.484h5.156zM5.781 4.984c0.016 1.484-1.109 2.672-2.906 2.672v0h-0.031c-1.734 0-2.844-1.188-2.844-2.672 0-1.516 1.156-2.672 2.906-2.672 1.766 0 2.859 1.156 2.875 2.672zM24 16.375v8.875h-5.141v-8.281c0-2.078-0.75-3.5-2.609-3.5-1.422 0-2.266 0.953-2.641 1.875-0.125 0.344-0.172 0.797-0.172 1.266v8.641h-5.141c0.063-14.031 0-15.484 0-15.484h5.141v2.25h-0.031c0.672-1.062 1.891-2.609 4.672-2.609 3.391 0 5.922 2.219 5.922 6.969z"></path></symbol><symbol id="FontAwesomeicon-google" viewbox="0 0 24 28"><title>google</title><path d="M12 12.281h11.328c0.109 0.609 0.187 1.203 0.187 2 0 6.844-4.594 11.719-11.516 11.719-6.641 0-12-5.359-12-12s5.359-12 12-12c3.234 0 5.953 1.188 8.047 3.141l-3.266 3.141c-0.891-0.859-2.453-1.859-4.781-1.859-4.094 0-7.438 3.391-7.438 7.578s3.344 7.578 7.438 7.578c4.75 0 6.531-3.406 6.813-5.172h-6.813v-4.125z"></path></symbol></defs></svg><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"><defs><symbol id="Lineariconsicon-users" viewbox="0 0 20 20"><title>users</title><path class="path1" d="M18.5 18h-11c-0.827 0-1.5-0.673-1.5-1.5 0-0.048 0.011-1.19 0.924-2.315 0.525-0.646 1.241-1.158 2.128-1.522 1.071-0.44 2.4-0.662 3.948-0.662s2.876 0.223 3.948 0.662c0.887 0.364 1.603 0.876 2.128 1.522 0.914 1.125 0.924 2.267 0.924 2.315 0 0.827-0.673 1.5-1.5 1.5zM7 16.503c0.001 0.275 0.225 0.497 0.5 0.497h11c0.275 0 0.499-0.223 0.5-0.497-0.001-0.035-0.032-0.895-0.739-1.734-0.974-1.157-2.793-1.768-5.261-1.768s-4.287 0.612-5.261 1.768c-0.707 0.84-0.738 1.699-0.739 1.734z"></path><path class="path2" d="M13 11c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4c0 2.206-1.794 4-4 4zM13 4c-1.654 0-3 1.346-3 3s1.346 3 3 3 3-1.346 3-3-1.346-3-3-3z"></path><path class="path3" d="M4.5 18h-3c-0.827 0-1.5-0.673-1.5-1.5 0-0.037 0.008-0.927 0.663-1.8 0.378-0.505 0.894-0.904 1.533-1.188 0.764-0.34 1.708-0.512 2.805-0.512 0.179 0 0.356 0.005 0.527 0.014 0.276 0.015 0.487 0.25 0.473 0.526s-0.25 0.488-0.526 0.473c-0.153-0.008-0.312-0.012-0.473-0.012-3.894 0-3.997 2.379-4 2.503 0.001 0.274 0.225 0.497 0.5 0.497h3c0.276 0 0.5 0.224 0.5 0.5s-0.224 0.5-0.5 0.5z"></path><path class="path4" d="M5 12c-1.654 0-3-1.346-3-3s1.346-3 3-3 3 1.346 3 3-1.346 3-3 3zM5 7c-1.103 0-2 0.897-2 2s0.897 2 2 2 2-0.897 2-2c0-1.103-0.897-2-2-2z"></path></symbol></defs></svg>
+		<script type="text/javascript">
 
-    <p>Welcome! My name is Dennis Oliver Kubitza, born in October 1993. I am currently a PhD Candidate in Regional Economics and Labor Market Statistics at Maastricht University, while working at the <a href="https://www.bibb.de/en/index.php">Federal Institute for Vocational Education and Training (BIBB)</a> in Bonn, Germany. My research focuses on the statistical and causal analysis of mobility, regional, and survey data within the Junior Research Group <a href="https://www.bibb.de/de/133458.php">"RISA"</a>.</p>
+			jQuery(document).ready(function() {
+                let event = new Event('oxygenVSBInitToggleJs');
+                document.dispatchEvent(event);
+			});
 
-    <p>Previously, I worked at <a href="https://www.iais.fraunhofer.de/">Fraunhofer IAIS</a> on projects like the <a href="https://www.dataspaces.fraunhofer.de/en/vertikalisierungen/mobility_data_space.html">Mobility Data Space</a> and <a href="https://www.limbo-project.org/">LIMBO</a>. I was involved in project management, proposal development, software engineering (Java, React), and decentralized data architectures (Gaia-X, IDS).</p>
+            document.addEventListener("oxygenVSBInitToggleJs",function(){
+                oxygenVSBInitToggleState();
+            },false);
 
-    <p>Additionally, I gained experience in knowledge graph development, behavioral economics research, and statistical programming (R, LaTeX) through roles at Fraunhofer IAIS, briq Institute, and the University of Bonn.</p>
+			oxygenVSBInitToggleState = function() {
 
-    <h3 class="w3-xlarge w3-text-blue-grey"><b>Key Interests</b></h3>
-    <ul class="w3-large w3-text-blue-grey">
-      <li>Non-parametric Statistics and Stochastic Modeling</li>
-      <li>Regional and Labor Market Analysis</li>
-      <li>Large Data Integration and Decentralized Architectures</li>
-      <li>Behavioral Economics and Social Studies</li>
-    </ul>
-
-    <p>I completed Fraunhofer's "Data Scientist for Big Data Infrastructures" training in 2019 and became a Certified Data Scientist Specialized in Trustworthy AI in 2020. I continue developing my skills through ongoing technical and leadership training.</p>
-
-    <h3 class="w3-xlarge w3-text-blue-grey"><b>Personal Interests</b></h3>
-    <ul class="w3-large w3-text-blue-grey">
-      <li>Sailing and fostering teamwork</li>
-      <li>Climbing and bouldering for mental focus</li>
-      <li>Strategic board games and collaborative thinking</li>
-    </ul>
-
-    <p>Feel free to connect with me on <a href="https://www.linkedin.com/in/dennis-oliver-kubitza/">LinkedIn</a> or visit my <a href="http://www.dennis-kubitza.de">personal homepage</a>.</p>
-  </div>
-
-  <!-- Courses -->
-  <div class="w3-container" id="cou" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-blue-grey"><b>Courses</b></h1>
-    <hr style="width:50px;border:5px solid #607d8b" class="w3-round">
-				<hr style="width:50px;border:5px solid blue-grey" class="w3-round">
-
-
-<div class="gallery">
-  <center><a target="https://www.dropbox.com/sh/i9oze5iuvdi2hye/AABN3e1HuZxrUyUO6NwHRWDla?dl=0" href="https://www.dropbox.com/sh/i9oze5iuvdi2hye/AABN3e1HuZxrUyUO6NwHRWDla?dl=0">
-    <img src="sources/design/R.png" alt="R Logo" class="img">
-  </a>
-  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey">A 3-5 day R-course.</h4><hr>The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. It was created by Matthias Duch and myself between 2016-2018. The course material is currently available on Dropbox and will be published on GitHub in the future.</div>
-</div>
-
-<div class="gallery">
-<center>
-  <a target="https://github.com/DennisKubitza/LaTeX-Kurs" href="https://github.com/DennisKubitza/LaTeX-Kurs">
-    <img src="sources/design/latex.png" alt="LaTeX Logo" class="img">
-  </a>
-  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey">A 3 day LaTeX beginners course.</h4><hr>The course was originally held at the Department of Economics, University of Bonn, as an extracuriclur programming course. The material was created by Max Kirchner for the Department of Mathematics and reworked heavily by Matthias Duch and myself between 2015-2019. The course material is available on GitHub.</div>
-</div>
-
-<div class="gallery">
-  <center><a target="sources/subpages/zTree/index.html" href="sources/subpages/zTree/index.html">
-    <img src="sources/design/z.png" alt="Northern Lights" class="img">
-  </a>
-  <div class="desc"><hr><h4 class="w3-xlarge w3-text-blue-grey"> 3 Lectures for z-Tree with Hands on</h4><hr>The course was originally held at briq Institute for Ph.D. and regular Students at the University of Bonn as a knowledge transfer event, after I attendet a course with Urs Fischbacher the creator of z-Tree. </div>
-</div>
-			</div>
-
-
-<!-- Publications -->
-
-<div class="w3-container" id="pub" style="margin-top:75px">
- <h1 class="w3-xxxlarge w3-text-blue-grey"><b>PUBLICATIONS</b></h1>
-
-  <h3 class="w3-xlarge w3-text-blue-grey"><b>A Journal Articles</b></h3>
-  <ul style="padding-left: 20px; margin-top: 5px;">
-    <li>D. O. Kubitza and K. Weßling, “Another one rides the bus – commuting versus moving decisions during the transition to higher education,” Forthcoming, 2025.</li>
-    <li>D. O. Kubitza, “Match me up before i go-go! estimating matching functions for vet students in spatially connected labour markets,” Forthcoming, 2025.</li>
-    <li>D. O. Kubitza and K. Weßling, “Whole lotta training-studying school-to-training transitions by training artificial neural networks,” 2025, Preprint available at Econstore.com.</li>
-    <li>K. Wessling, J. Detemple, D. Kubitza, I. Loll, and N. Theuer, “Same same but different–was regionen mit ausbildungswünschen und-chancen zu tun haben, und warum das nicht für jede/-n gilt,” <i>Berufsbildung in Wissenschaft und Praxis</i>, no. 3, pp. 24–28, 2024.</li>
-  </ul>
-
- <h3 class="w3-xlarge w3-text-blue-grey"><b> Whitepapers & Conference Proceedings</b></h3>
-  <ul style="padding-left: 20px; margin-top: 5px;">
-    <li>M. Böckmann, S. Höffler, J. Knoop, H. Schmidt, and D. Kubitza, “Gdpr compliant multi-application data governance: Enhancing the open integration hub with ids and solid,” in 27th ITS World Congress, Hamburg, Germany, 2021.</li>
-    <li>H. Drees, D. O. Kubitza, J. Lipp, S. Pretzsch, and C. S. Langdon, “Mobility data space–first implementation and business opportunities,” in 27th ITS World Congress, Hamburg, Germany, 2021.</li>
-    <li>S. Bader, F. Bruckner, G. Böge, D. O. Kubitza, J. Langkau, and R. Nagel, “Specification ids meta data broker,” in IDSA White Paper, 2020.</li>
-    <li>D. O. Kubitza, M. Böckmann, and D. Graux, “Semangit: A linked dataset from git,” in <i>The Semantic Web–ISWC 2019: 18th International Semantic Web Conference</i>, Auckland, New Zealand, October 26–30, 2019, Proceedings, Part II 18, Springer International Publishing, 2019, pp. 215–228.</li>
-    <li>D. O. Kubitza, M. Böckmann, and D. Graux, “Towards semantically structuring github.,” in ISWC Satellites, vol. 2456, 2019.</li>
-  </ul>
-</div>
-
-
-			<!-- End page content -->
-		</div>
-		<!-- W3.CSS Container -->
-		<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
-
-			<p class="w3-right">      Website for personal, non Commercial Use by Dennis Kubitza. Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a> <br>
-
-		</div>
-		<script>
-			// Script to open and close sidebar
-			function w3_open() {
-			    document.getElementById("mySidebar").style.display = "block";
-			    document.getElementById("myOverlay").style.display = "block";
+				jQuery('.oxy-toggle').each(function() {
+				
+					var initial_state = jQuery(this).attr('data-oxy-toggle-initial-state'),
+					   toggle_target = jQuery(this).attr('data-oxy-toggle-target'),
+                       active_class = jQuery(this).attr('data-oxy-toggle-active-class');
+				
+					if (initial_state == 'closed') {
+						if (!toggle_target) {
+							jQuery(this).next().hide();
+						} else {
+							jQuery(toggle_target).hide();
+						}
+						jQuery(this).children('.oxy-expand-collapse-icon').addClass('oxy-eci-collapsed');
+                        jQuery(this).removeClass(active_class)
+					}
+                    else {
+                        jQuery(this).addClass(active_class)
+                    }
+				});
 			}
 
-			function w3_close() {
-			    document.getElementById("mySidebar").style.display = "none";
-			    document.getElementById("myOverlay").style.display = "none";
-			}
+            jQuery("body").on('click', '.oxy-toggle', function() {
 
-			// Modal Image Gallery
-			function onClick(element) {
-			  document.getElementById("img01").src = element.src;
-			  document.getElementById("modal01").style.display = "block";
-			  var captionText = document.getElementById("caption");
-			  captionText.innerHTML = element.alt;
-			}
+                var toggle_target  = jQuery(this).attr('data-oxy-toggle-target'),
+                    active_class   = jQuery(this).attr('data-oxy-toggle-active-class');
+
+                jQuery(this).toggleClass(active_class)
+                jQuery(this).children('.oxy-expand-collapse-icon').toggleClass('oxy-eci-collapsed');
+
+                if (!toggle_target) {
+                    jQuery(this).next().toggle();
+                } else {
+                    jQuery(toggle_target).toggle();
+                }
+
+                // force 3rd party plugins to rerender things inside the toggle
+                jQuery(window).trigger('resize');
+            });
 		</script>
-	</body>
+
+	<script src="/wp-content/plugins/oxymade/public/js/power-toggle.js?ver=6.9.4" id="oxymade-power-toggle-js"></script>
+<script src="/wp-content/plugins/oxymade/public/js/infinite-scroll.pkgd.min.js?ver=6.9.4" id="infinite-scroll-js-js"></script>
+<script src="/wp-includes/js/imagesloaded.min.js?ver=5.0.0" id="imagesloaded-js"></script>
+<script src="/wp-includes/js/masonry.min.js?ver=4.2.2" id="masonry-js"></script>
+<script type="text/javascript" id="ct-footer-js">jQuery('.card-relaxed').attr({'data-aos-enable': 'true','data-aos': 'fade','data-aos-duration': '1000','data-aos-once': 'true',});jQuery('.fade-in').attr({'data-aos-enable': 'true','data-aos': 'fade','data-aos-duration': '1000','data-aos-once': 'true',});jQuery('.fade-left').attr({'data-aos-enable': 'true','data-aos': 'zoom-out','data-aos-duration': '850',});
+	  	AOS.init({
+	  		  		  		  		  		  		  				  			})
+		
+				jQuery('body').addClass('oxygen-aos-enabled');
+		
+		
+	</script><!-- /WP_FOOTER --> 
+</body>
 </html>
-
-

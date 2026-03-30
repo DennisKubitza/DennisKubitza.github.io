@@ -1,0 +1,159 @@
+#select2-oxy-ou_countdown_oucd_tz-container{color:#fff!important;}
+
+.ou-countdown.ou-timer{ width:100%;}
+
+.ou-countdown.ou-fixed-date-countWeeks,
+.ou-countdown.ou-fixed-date-countDays,
+.ou-countdown.ou-fixed-date-countHours,
+.ou-countdown.ou-fixed-date-countMinutes,
+.ou-countdown.ou-fixed-date-countSeconds,
+.ou-countdown.ou-evergreen-date-countWeeks,
+.ou-countdown.ou-evergreen-date-countDays,
+.ou-countdown.ou-evergreen-date-countHours,
+.ou-countdown.ou-evergreen-date-countMinutes,
+.ou-countdown.ou-evergreen-date-countSeconds {
+    border: 4px solid #000;
+    border-radius: 50%;
+    padding: 30px;
+    margin-right: 20px;
+}
+
+.ou-countdown-item .ou-countdown-label,
+.ou-countdown-item .ou-countdown-digit {
+    padding: 0;
+    margin: 0;
+}
+
+.ou-countdown .ou-countdown-digit-wrapper.square {
+    display: -webkit-box;
+    display: -ms-flexbox;
+	display: flex;
+	box-pack: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+	justify-content: center;
+	box-align: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+	align-items: center;
+	box-orient: vertical;
+	-webkit-box-orient: vertical;
+	box-direction: normal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.countdown-rtl {
+    direction: rtl;
+}
+.countdown-holding span {
+    color: #888;
+}
+.countdown-row {
+    clear: both;
+    width: 100%;
+    padding: 0px 2px;
+    text-align: center;
+}
+.countdown-show1 .countdown-section {
+    width: 98%;
+}
+.countdown-show2 .countdown-section {
+    width: 48%;
+}
+.countdown-show3 .countdown-section {
+    width: 32.5%;
+}
+.countdown-show4 .countdown-section {
+    width: 24.5%;
+}
+.countdown-show5 .countdown-section {
+    width: 19.5%;
+}
+.countdown-show6 .countdown-section {
+    width: 16.25%;
+}
+.countdown-show7 .countdown-section {
+    width: 14%;
+}
+.countdown-section {
+    display: block;
+    font-size: 75%;
+    text-align: center;
+}
+.countdown-amount {
+    font-size: 200%;
+}
+.countdown-period {
+    display: block;
+}
+.countdown-descr {
+    display: block;
+    width: 100%;
+}
+
+.ou-countdown-fixed-timer,
+.ou-countdown-evergreen-timer {
+    width: 100%;
+    display: block;
+}
+.ou-countdown-fixed-timer .ou-countdown-item,
+.ou-countdown-evergreen-timer .ou-countdown-item {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+	position: relative;
+}
+
+.ou-countdown.ou-countdown-separator-colon .ou-countdown-item:first-child {
+    padding-left: 0!important;
+}
+
+.ou-countdown.ou-countdown-separator-colon .ou-countdown-item:last-child {
+    padding-right: 0!important;
+}
+
+.ou-countdown-digit-wrapper,
+.ou-countdown-label-wrapper {
+	text-align: center;
+	position: relative;
+}
+
+/* Timer separator */
+.ou-countdown-separator-line .ou-countdown-item {
+	position: relative;
+	padding: 0;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.ou-countdown-separator-colon .ou-countdown-item .ou-countdown-digit-wrapper:after {
+	content: ':';
+	display: inline-block;
+	font-size: 30px;
+    line-height: 1.325;
+	position: absolute;
+	right: -5px;
+	top: 50%;
+	z-index: 10;
+	-webkit-transform: translateY(-50%);
+	   -moz-transform: translateY(-50%);
+			transform: translateY(-50%);
+    text-align: right;
+}
+.ou-countdown-separator-line .ou-countdown-item:after {
+	content: '';
+	display: inline-block;
+	position: absolute;
+	top: 0;
+    right: 0;
+	bottom: 0;
+	z-index: 10;
+	border-right: 1px solid #ccc;
+}
+.ou-countdown-separator-colon .ou-countdown-item:not(.label-position-right):last-child .ou-countdown-digit-wrapper:after,
+.ou-countdown-separator-line .ou-countdown-item:last-child:after {
+	content: none;
+}

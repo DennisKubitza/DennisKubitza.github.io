@@ -1,0 +1,74 @@
+.tippy-box[data-animation=shift-away][data-state=hidden]{opacity:0}.tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=top]{transform:translateY(10px)}.tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=bottom]{transform:translateY(-10px)}.tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=left]{transform:translateX(10px)}.tippy-box[data-animation=shift-away][data-state=hidden][data-placement^=right]{transform:translateX(-10px)}
+.tippy-box[data-animation=scale][data-placement^=top]{transform-origin:bottom}.tippy-box[data-animation=scale][data-placement^=bottom]{transform-origin:top}.tippy-box[data-animation=scale][data-placement^=left]{transform-origin:right}.tippy-box[data-animation=scale][data-placement^=right]{transform-origin:left}.tippy-box[data-animation=scale][data-state=hidden]{transform:scale(.5);opacity:0}
+.tippy-box[data-animation=shift-toward][data-state=hidden]{opacity:0}.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=top]{transform:translateY(-10px)}.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=bottom]{transform:translateY(10px)}.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=left]{transform:translateX(-10px)}.tippy-box[data-animation=shift-toward][data-state=hidden][data-placement^=right]{transform:translateX(10px)}
+.tippy-box[data-animation=perspective][data-placement^=top]{transform-origin:bottom}.tippy-box[data-animation=perspective][data-placement^=top][data-state=visible]{transform:perspective(700px)}.tippy-box[data-animation=perspective][data-placement^=top][data-state=hidden]{transform:perspective(700px) translateY(8px) rotateX(60deg)}.tippy-box[data-animation=perspective][data-placement^=bottom]{transform-origin:top}.tippy-box[data-animation=perspective][data-placement^=bottom][data-state=visible]{transform:perspective(700px)}.tippy-box[data-animation=perspective][data-placement^=bottom][data-state=hidden]{transform:perspective(700px) translateY(-8px) rotateX(-60deg)}.tippy-box[data-animation=perspective][data-placement^=left]{transform-origin:right}.tippy-box[data-animation=perspective][data-placement^=left][data-state=visible]{transform:perspective(700px)}.tippy-box[data-animation=perspective][data-placement^=left][data-state=hidden]{transform:perspective(700px) translateX(8px) rotateY(-60deg)}.tippy-box[data-animation=perspective][data-placement^=right]{transform-origin:left}.tippy-box[data-animation=perspective][data-placement^=right][data-state=visible]{transform:perspective(700px)}.tippy-box[data-animation=perspective][data-placement^=right][data-state=hidden]{transform:perspective(700px) translateX(-8px) rotateY(60deg)}.tippy-box[data-animation=perspective][data-state=hidden]{opacity:0}
+
+.oxy-add-marker{position: absolute; top: 2%; left: 2%;}
+.oxy-add-marker .hp-marker-inner{display: flex; z-index: 2; position: relative; cursor: pointer;}
+.oxy-add-marker .hp-marker-inner * {z-index: 2; position: relative;}
+.oxy-add-marker .marker-type-icon{align-items: center; justify-content: center; width: 35px; height: 35px; line-height: 35px; border-radius: 50px; background-color: #333;}
+.oxy-add-marker .marker-type-text{display: inline-block; background: #333; color: #fff; padding: 0 10px}
+.oxy-add-marker .marker-type-text span.marker-text{width: 100%; display: block;}
+.marker-type-icon svg{width: 20px; height: 20px; color: #fff; fill: currentColor}
+.oxy-add-marker .marker-ripple-effect:before{background-color: #333;}
+.oxy-add-marker .marker-type-icon.marker-ripple-effect:before{border-radius: 50px;}
+.marker-ripple-effect:before{
+	content: " ";
+	display: block;
+	pointer-events: none;
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	-webkit-animation: shadow-pulse 2s infinite;
+	animation: shadow-pulse 2s infinite;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+@keyframes shadow-pulse
+{
+	0% {
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+	100% {
+		-webkit-transform: scale(1.4);
+		transform: scale(1.4);
+		opacity: 0;
+	}
+}
+
+.ou-tooltip-content-wrap,
+.oxy-add-marker .tippy-box {
+	background-color: #333;
+	border-radius: 5px;
+	color: #fff;
+	width: 250px;
+}
+
+.ou-tooltip-content-wrap,
+.oxy-add-marker .tippy-content {
+	padding: 5px 9px;
+}
+
+.oxy-add-marker .tooltip-content-toggle {
+	position: relative;
+	left: 0;
+	top: 10px;
+	z-index: 4;
+}
+
+body:not(.oxygen-builder-body) .ou-tooltip-content-wrap {
+	display: none;
+}
+
+.ou-tooltip-content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}

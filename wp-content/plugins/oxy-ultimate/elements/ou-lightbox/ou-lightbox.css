@@ -1,0 +1,186 @@
+body.oxygen-builder-body .oxy-ajax-lightbox {
+	display: block;
+	width: 100%;
+}
+.oxy-ajax-lightbox .ou-lb-content-wrap,
+body:not(.oxygen-builder-body) .oxy-ajax-lightbox .lb-atts,
+.oxy-ajax-lightbox .oxy-repeater-pages,
+.oxy-ajax-lightbox .lb-spinner {
+	display: none;
+	visibility: hidden;
+	text-align: left;
+}
+.oxy-ajax-lightbox .ou-lb-content-wrap.lb-enabled,
+.oxy-ajax-lightbox .lb-spinner.show {
+	display: block;
+	visibility: visible;
+}
+.oxy-ajax-lightbox .lb-back-drop {
+	position: fixed;
+	background: rgba(8, 7, 7, 82%);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 10050;
+}
+.oxy-ajax-lightbox .ou-lb-content {
+	background-color: #fff;
+	display: block;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin: 0 auto;
+	max-width: 750px;
+	width: 100%;
+	z-index: 10051;
+	visibility: hidden;
+	-webkit-transform: translate(-50%, -55%);
+	-moz-transform: translate(-50%, -55%);
+	transform: translate(-50%, -55%);
+	transition: all 900ms;
+}
+.ou-lb-content.lb-box-fadein,
+.lb-builder-preview .ou-lb-content {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+body:not(.oxygen-builder-body) .lb-back-drop {
+	opacity: 0;
+	visibility: hidden;
+}
+body:not(.oxygen-builder-body) .lb-enabled .lb-back-drop {
+	visibility: visible;
+}
+.oxy-ajax-lightbox .ou-lb-content > .oxy-dynamic-list,
+.oxy-ajax-lightbox .ou-lb-content > .ct-section,
+.oxy-ajax-lightbox .ou-lb-content > .ct-section .ct-section-inner-wrap,
+.oxy-ajax-lightbox .ou-lb-content > .ct-div-block,
+.lb-off-canvas .bplb-content-wrap > .oxy-dynamic-list,
+.lb-off-canvas .bplb-content-wrap > .ct-section,
+.lb-off-canvas .bplb-content-wrap > .ct-div-block {
+	max-width: 100%!important;
+	width: 100%!important;
+}
+.oxy-ajax-lightbox .ou-lb-content > .oxy-dynamic-list,
+.oxy-ajax-lightbox .ou-lb-content > .ct-section,
+.oxy-ajax-lightbox .ou-lb-content > .ct-div-block,
+.lb-off-canvas .bplb-content-wrap,
+.lb-off-canvas .bplb-content-wrap > .oxy-dynamic-list,
+.lb-off-canvas .bplb-content-wrap > .ct-section,
+.lb-off-canvas .bplb-content-wrap > .ct-div-block {
+	overflow-y: auto;
+  overflow-x: hidden;
+	height:  100%;
+}
+.close-lightbox {
+	background-color: #fff;
+	border-radius: 50px;
+	box-shadow: 3px -1px 10px #565656;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 35px;
+	line-height: 35px;
+	position: absolute;
+	top: -18px;
+	right: -18px;
+	width: 35px;
+	z-index: 10052;
+}
+.close-lightbox svg {
+	width: 16px;
+	height: 16px;
+	fill: currentColor;
+}
+.lb-off-canvas .close-lightbox {
+	top: 3px;
+	right: 3px;
+}
+.oxy-ajax-lightbox .oxy-product-images div.images {
+	width: 100%!important;
+}
+.oxy-ajax-lightbox .oxy-product-images div.images .flex-control-thumbs li,
+.oxy-ajax-lightbox .oxy-product-images .woocommerce-product-gallery__wrapper,
+.oxy-ajax-lightbox .oxy-product-images div.flex-viewport{
+	border: none!important;
+}
+.oxy-ajax-lightbox .oxy-product-images div.images .flex-control-thumbs {
+	display: grid!important;
+	grid-template-columns: repeat( auto-fit, minmax(64px, 1fr) );
+	gap: 5px;
+	margin-top: 5px!important;
+}
+.oxy-ajax-lightbox .oxy-product-images div.images .flex-control-thumbs li {
+	width: auto!important;
+}
+.oxy-ajax-lightbox .bplb-content-wrap .oxy-dynamic-list > div:not(.oxy_repeater_original):first-child {
+    display: block!important;
+}
+/* Off Canvas */
+.ou-lb-content.lb-off-canvas {
+	max-width: 300px;
+	height: 100%!important;
+	left: auto;
+	right: 0;
+	top: 0;
+	pointer-events: auto;
+	transition: all 0.5s ease;
+}
+.oxy-ajax-lightbox .ou-lb-content.lb-ofc {
+	-webkit-transform: translateX(100%);
+	-moz-transform: translateX(100%);
+	transform: translateX(100%);
+}
+.ou-lb-content.lb-off-canvas.lb-box-fadein,
+.lb-builder-preview .ou-lb-content.lb-off-canvas {
+	-webkit-transform: none!important;
+	-ms-transform: none!important;
+	-moz-transform: none!important;
+	transform: none!important;
+}
+
+.oxy-ajax-lightbox .lb-spinner {
+	background: url('/wp-content/plugins/plugins/oxy-ultimate/elements/ou-lightbox/ajax-loader.svg') no-repeat scroll;
+	width: 32px;
+	height: 32px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 10052;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	background-size: cover;
+	animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+body.lb-remove-scroll {
+	overflow: hidden!important;
+}
+@media only screen and (max-width: 768px) {
+	.oxy-ajax-lightbox .ou-lb-content:not(.lb-off-canvas) {
+		opacity: 0;
+		position: fixed;
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+		width: calc(100% - 24px);
+		max-width: 100%!important;
+	}
+	.oxy-ajax-lightbox .ou-lb-content:not(.lb-off-canvas).lb-box-fadein {
+		opacity: 1;
+	}
+	.ou-lb-content:not(.lb-off-canvas) .close-lightbox {
+		top: -10px;
+		right: -10px;
+	}
+}

@@ -1,0 +1,768 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+#oxymade-sidebar,
+#sidebar-content,
+#oxymade-hoversidebar {
+  height: 100%;
+  overflow: auto;
+}
+#oxymade-hoversidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  width: 400px;
+  max-width: 400px;
+  box-shadow: -10px 2px 8px 3px rgb(0 0 0 / 10%),
+    -5px 1px 6px -2px rgb(0 0 0 / 5%);
+  transition: width 0.35s;
+}
+
+#oxymade-sidebar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: #535d65;
+  width: 30%;
+  max-width: 300px;
+  /* min-width: 300px; */
+  box-shadow: -10px 2px 8px 3px rgb(0 0 0 / 10%),
+    -5px 1px 6px -2px rgb(0 0 0 / 5%);
+  transition: width 0.35s;
+}
+
+#oxymade-sidebar.sidebar-collapsed {
+  width: 0;
+}
+#oxymade-hoversidebar.hoversidebar-collapsed {
+  width: 0;
+}
+
+#sidebar-content {
+  background: gray;
+  width: 100%;
+}
+
+#sidebar-closer {
+  float: right;
+}
+#hoversidebar-content {
+  background: gray;
+  width: 100%;
+}
+
+#hoversidebar-closer {
+  float: right;
+}
+
+.sidebar-hide {
+  display: none;
+}
+.hoversidebar-hide {
+  display: none;
+}
+
+.sidebar-show {
+  display: block !important;
+}
+.hoversidebar-show {
+  display: block !important;
+}
+.oxymade-copy-btn:hover svg {
+  color: #4b5563;
+}
+ul.oxymadecolors {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+svg {
+  display: block;
+  vertical-align: middle;
+}
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-pink-600 {
+  background-color: #d61f69;
+}
+.border-gray-200 {
+  border-color: #e5e7eb;
+}
+.rounded-md {
+  border-radius: 6px;
+}
+.rounded-r-md {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.rounded-l-md {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.border-t {
+  border-top-width: 1px;
+}
+.border-r {
+  border-right-width: 1px;
+}
+.border-b {
+  border-bottom-width: 1px;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.flex-1 {
+  flex: 1 1 0%;
+}
+.flex-shrink {
+  flex-shrink: 1;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.h-5 {
+  height: 20px;
+}
+.h-8 {
+  height: 32px;
+}
+.h-9 {
+  height: 36px;
+}
+.w-4 {
+  width: 16px;
+}
+.w-6 {
+  width: 24px;
+}
+.h-4 {
+  height: 16px;
+}
+.w-10 {
+  width: 40px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mt-3 {
+  margin-top: 12px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.min-w-0 {
+  min-width: 0;
+}
+.p-6 {
+  padding: 24px;
+}
+.py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.px-4 {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.pr-2 {
+  padding-right: 8px;
+}
+.shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.text-white {
+  color: #ffffff;
+}
+.text-gray-400 {
+  --tw-text-opacity: 1;
+  color: rgba(156, 163, 175, var(--tw-text-opacity));	
+}
+.text-gray-600 {
+  color: #4b5563;
+}
+.text-gray-900 {
+  color: #161e2e;
+}
+.hover\:text-gray-600:hover {
+  color: #4b5563;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-xl {
+  font-size: 20px;
+}
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.w-5 {
+  width: 20px;
+}
+.w-16 {
+  width: 64px;
+}
+.gap-5 {
+  grid-gap: 20px;
+  gap: 20px;
+}
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+.p-0 {
+  padding: 0px;
+}
+.border-none {
+  border: 0px;
+}
+.mt-0 {
+  margin-top: 0px;
+}
+.mr-3 {
+  margin-right: 12px;
+}
+.bg-trans {
+  background-color: transparent;
+}
+.shadow {
+  box-shadow: -10px 2px 8px 3px rgb(0 0 0 / 10%),
+    -5px 1px 6px -2px rgb(0 0 0 / 5%);
+}
+
+.oxymade-merge-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.oxymade-merge-wrapper > * {
+  margin-top: 14px;
+}
+
+.oxymade-merge-wrapper > span {
+  width: 33%;
+}
+
+.oxymade-merge-utilitywarning {
+  background: #ff430b !important;
+}
+
+.oxymade-merge-utility-wrapper {
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 0px 8px;
+  text-align: center;
+}
+
+.oxymade-merge-utility-wrapper svg {
+ height: 48px;
+ width: 48px;
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 24px;
+ background: #60656c;
+ padding: 12px;
+ border-radius: 22px;
+}
+
+.oxymade-merge-utility-wrapper a{
+  color: #fff;
+}
+
+.oxymade-merge-utility-wrapper a:hover{
+  color: yellow;
+}
+.oxymade-merge-label {
+  font-size: 12px;
+  color: #999;
+  line-height: 10px;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  cursor: pointer;
+}
+
+.oxymade-merge-label > a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.oxymade-merge-label:hover {
+  color: #fff;
+}
+
+.oxymade-merge-label:hover small {
+  text-decoration: underline;
+}
+
+.oxymade-merge-label > small {
+  margin: 0;
+  line-height: 1px;
+}
+
+.oxymade-merge-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+  padding-left: 6px;
+  padding-right: 6px;
+  color: #fff;
+  height: 21px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.oxymade-merge-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+.oxybg {
+  background: #262e35;
+  color: #ffffff;
+}
+.oxyelementbg {
+  background: #3e454c;
+}
+.oxyelementbg:hover {
+  /* background: #24577E; */
+}
+
+.oxyheadingbg {
+  background: #353d44;
+  border-bottom: 1px solid #19242e;
+}
+
+.hidden {
+  display: none;
+}
+
+
+.visible {
+  visibility: visible;
+}
+    
+    .absolute {
+  position: absolute;
+}
+    
+    .mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+    
+    .mr-3 {
+  margin-right: 12px;
+}
+    
+    .block {
+  display: block;
+}
+    
+    .inline-block {
+  display: inline-block;
+}
+    
+    .flex {
+  display: flex;
+}
+    
+    .inline-flex {
+  display: inline-flex;
+}
+    
+    .table {
+  display: table;
+}
+    
+    .grid {
+  display: grid;
+}
+    
+    .hidden {
+  display: none;
+}
+    
+    .h-full {
+  height: 100%;
+}
+    
+    .min-h-screen {
+  min-height: 100vh;
+}
+    
+    .w-full {
+  width: 100%;
+}
+    
+    .max-w-sm {
+  max-width: 384px;
+}
+    
+    .flex-shrink {
+  flex-shrink: 1;
+}
+    
+    .flex-grow {
+  flex-grow: 1;
+}
+    
+    .border-collapse {
+  border-collapse: collapse;
+}
+    
+    .transform {
+  --tw-translate-x: 0;
+  --tw-translate-y: 0;
+  --tw-rotate: 0;
+  --tw-skew-x: 0;
+  --tw-skew-y: 0;
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+    
+    .cursor-pointer {
+  cursor: pointer;
+}
+    
+    .resize {
+  resize: both;
+}
+    
+    .grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+    
+    .grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+    
+    .flex-col {
+  flex-direction: column;
+}
+    
+    .items-stretch {
+  align-items: stretch;
+}
+    
+    .items-center {
+  align-items: center;
+}
+    
+    .justify-between {
+  justify-content: space-between;
+}
+    
+    .justify-center {
+  justify-content: center;
+}
+    
+    .gap-6 {
+  gap: 24px;
+}
+    
+    .gap-4 {
+  gap: 16px;
+}
+    
+    .gap-y-8 {
+  row-gap: 32px;
+}
+    
+    .rounded {
+  border-radius: 4px;
+}
+    
+    .border {
+  border-width: 1px;
+}
+    
+    .bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(31, 41, 55, var(--tw-bg-opacity));
+}
+    
+    .bg-gray-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(75, 85, 99, var(--tw-bg-opacity));
+}
+    
+    .bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+}
+    
+    .bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+    
+    .bg-indigo-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(79, 70, 229, var(--tw-bg-opacity));
+}
+    
+    .bg-red-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(254, 202, 202, var(--tw-bg-opacity));
+}
+    
+    .p-6 {
+  padding: 24px;
+}
+    
+    .p-4 {
+  padding: 16px;
+}
+    
+    .p-2 {
+  padding: 8px;
+}
+    
+    .py-4 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+    
+    .px-2 {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+    
+    .py-1 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+    
+    .py-2 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+    
+    .px-6 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+    
+    .text-center {
+  text-align: center;
+}
+    
+    .text-sm {
+  font-size: 14px;
+  line-height: 20px;
+}
+    
+    .text-xs {
+  font-size: 12px;
+  line-height: 16px;
+}
+    
+    .font-semibold {
+  font-weight: 600;
+}
+    
+    .font-medium {
+  font-weight: 500;
+}
+    
+    .uppercase {
+  text-transform: uppercase;
+}
+    
+    .text-gray-100 {
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));	
+
+}
+
+    .text-gray-300 {
+  --tw-text-opacity: 1;
+  color: rgba(209, 213, 219, var(--tw-text-opacity));
+}
+    
+    .text-yellow-300 {
+  --tw-text-opacity: 1;
+  color: rgba(252, 211, 77, var(--tw-text-opacity));
+}
+    
+    .text-green-300 {
+  --tw-text-opacity: 1;
+  color: rgba(110, 231, 183, var(--tw-text-opacity));
+}
+    
+    .text-indigo-100 {
+  --tw-text-opacity: 1;
+  color: rgba(224, 231, 255, var(--tw-text-opacity));
+}
+    
+    .text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgba(153, 27, 27, var(--tw-text-opacity));
+}
+    
+    .underline {
+  text-decoration: underline;
+}
+    
+    .opacity-50 {
+  opacity: 0.5;
+}
+    
+    .shadow {
+  --tw-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+    
+    .transition {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+    
+    .hover\:bg-indigo-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgba(67, 56, 202, var(--tw-bg-opacity));
+}
+    
+    .hover\:text-gray-100:hover {
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));
+}
+    
+    .hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgba(255, 255, 255, var(--tw-text-opacity));
+}
+
+.omColorsBtn:hover svg{
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));	
+}
+
+.omColorsBtn svg{
+  opacity: 0.5;
+}
+
+.omColorsLi:hover svg{
+  --tw-text-opacity: 1;
+  color: rgba(243, 244, 246, var(--tw-text-opacity));	
+}
+    
+    .hover\:opacity-100:hover {
+  opacity: 1;
+}
+
+.oxymade-lockbutton {
+  background: #f16437;
+}
+
+.oxymade-unlockbutton {
+  background: #009688;
+}
+
+.om-util-text {
+  line-height: 24px;
+  font-size: 16px;
+  margin-top: 24px;
+  padding: 16px;
+}
+
+.om-util-text b {
+  background: #3a444b;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 15px;
+  margin: 0px 6px;
+}
+
+#oxymade_utility_id {
+  font-weight: 600;
+  background: #32393c;
+  padding: 4px 12px;
+  border-radius: 6px;
+  line-height: 24px;
+  margin-bottom: 16px;
+  margin-top: 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+#oxymade_utility_id:hover {
+  cursor: pointer;
+  background: #009688;
+}
+
+#oxymade_utility_list {
+  font-weight: 600;
+  text-align: center;
+  padding: 8px 20px;
+  cursor: pointer;
+  background: rgb(255 255 255 / 10%);
+  border-radius: 6px;
+}
+
+#oxymade_utility_list:hover {
+  cursor: pointer;
+  background: #009688;
+}
+
+ul.oxymadecolors {
+  border-bottom: 1px solid hsl(207deg 7% 45%);
+  padding-bottom: 16px;
+  margin-bottom: 16px;
+}
+
+.omColorsLi {
+  display: flex;
+  flex-direction: column;
+}
+
+.omColorsLi button {
+  margin-bottom: 4px;
+}
+
+.omColorsHeading {
+  background: #424b52;
+  margin-left: -16px;
+  width: 300px;
+  padding: 8px 16px;
+  border: 1px solid hsl(207deg 10% 25%);
+}
+.wp-menu-image.dashicons-before img {
+  border: 0; 
+  }
+  
+.dom-tree-node {
+  margin-left: 2.4rem!important;
+}

@@ -1,0 +1,76 @@
+.ou-ha-button-container {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+
+a.ou-ha-button {
+  background-color: #333333;
+  color: #ffffff;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: auto;
+  vertical-align: middle;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a.ou-ha-button span  {
+  display: inline-block;
+}
+
+a.ou-ha-button:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
+    -o-transition-property: transform;
+    -ms-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+a.ou-ha-button,
+a.ou-ha-button:before {
+  transition-duration: 0.3s;
+}
+
+a.ou-ha-button:before,
+a.ou-ha-button:hover:before {
+  background-color: #f90c0c;
+}
+
+.btn-icon-alignleft {
+  margin-right: 10px;
+}
+
+.btn-icon-alignright {
+  margin-left: 10px;
+}
+
+.btn-icon-wrap svg {
+  margin-top: -3px;
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.ou-ha-button:hover .btn-icon-wrap svg {
+  fill: currentColor;
+}

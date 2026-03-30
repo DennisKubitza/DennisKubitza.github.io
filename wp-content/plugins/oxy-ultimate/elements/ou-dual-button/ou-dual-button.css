@@ -1,0 +1,76 @@
+.ou-dual-button-1 .ou-dual-button {
+  background-color: #eeeeee;
+  transition-duration: 0.2s;
+}
+
+.ou-dual-button-2 .ou-dual-button {
+  background-color: #dddddd;
+  transition-duration: 0.2s;
+}
+
+.ou-dual-button-content .ou-dual-button-inner {
+  display: inline-block;
+  position: relative;
+  width: auto;
+}
+
+.ou-dual-button-content .ou-dual-button-wrap {
+  cursor: pointer;
+  float: left;
+  position: relative;
+}
+
+.ou-dual-button-content a.ou-dual-button {
+  color: #565656;
+  display: inline-block;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  width: 220px;
+  vertical-align: middle;
+
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ou-dual-button::before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
+    -o-transition-property: transform;
+    -ms-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.ou-dual-button-inner .middle-text {
+  background-color: #333;
+  color: #fff;
+  position: absolute;
+  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  top: calc( 50% - 16px );
+  left: calc( 50% - 16px );
+  border-radius: 50px;
+  z-index: 1;
+  text-align: center;
+}
+
+.middle-text.mt-hide {
+  display: none;
+}

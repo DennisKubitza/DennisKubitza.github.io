@@ -1,0 +1,79 @@
+.oxy-ou-comment-form input:not([type="checkbox"]), 
+.oxy-ou-comment-form textarea {
+    padding: 0.5em;
+    border-radius: 0;
+    border: 1px solid #000;
+    color: gray;
+    width: 100%;
+}
+
+.oucf-hide-label .comment-form-author label,
+.oucf-hide-label .comment-form-comment label,
+.oucf-hide-label .comment-form-email label,
+.oucf-hide-label .comment-form-url label {
+  display: none;
+}
+
+.oxy-ou-comment-form #submit {
+    padding: 1em 2em;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 0.5em;
+    border: none;
+    font-weight: 700;
+    position: relative;
+
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.oxy-ou-comment-form #submit,
+.oxy-ou-comment-form #submit:before {
+  transition-duration: 0.3s;
+}
+
+.oxy-ou-comment-form #submit:before {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-transition-property: transform;
+    -moz-transition-property: transform;
+    -o-transition-property: transform;
+    -ms-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.oxy-ou-comment-form #submit:hover {
+    background-color: #555;
+}
+
+.oxy-ou-comment-form #submit:focus,
+.oxy-ou-comment-form #submit:active {
+    outline: 0;
+    border: none;
+}
+
+.oxy-ou-comment-form .comment-form-cookies-consent label {
+  margin-left: 5px;
+}
+
+.oxy-ou-comment-form p label {
+  display: inline-block;
+}
+
+.oxy-ou-comment-form input:focus,
+.oxy-ou-comment-form textarea:focus {
+    outline: none;
+}

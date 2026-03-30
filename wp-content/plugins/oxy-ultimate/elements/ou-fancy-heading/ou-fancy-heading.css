@@ -1,0 +1,54 @@
+/**
+ * Animation - Fancy Heading 
+ */
+.oufh-text {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+}
+
+@-webkit-keyframes oufh-hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+@keyframes oufh-hue {
+	from {
+		-webkit-filter: hue-rotate(0deg);
+	}
+	to {
+		-webkit-filter: hue-rotate(-360deg);
+	}
+}
+
+@-webkit-keyframes oufh-fade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+}
+
+@keyframes oufh-fade {
+	0%,100% { opacity: 0 }
+	50% { opacity: 1 }
+}
+
+@-webkit-keyframes oufh-rotate {
+	from {
+		-webkit-transform: rotateY(0deg);
+	}
+	to {
+		-webkit-transform: rotateY(360deg);
+	}
+}
+
+@keyframes oufh-rotate {
+	from {
+		transform: rotateY(0deg);
+	}
+	to {
+		transform: rotateY(360deg);
+	}
+}

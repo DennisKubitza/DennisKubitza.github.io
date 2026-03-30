@@ -1,0 +1,194 @@
+.ouv-ar-219 .ou-aspect-ratio {
+	padding-bottom: 42.8571%;
+}
+  
+.ouv-ar-169 .ou-aspect-ratio {
+	padding-bottom: 56.25%;
+}
+  
+.ouv-ar-43 .ou-aspect-ratio {
+	padding-bottom: 75%;
+}
+  
+.ouv-ar-32 .ou-aspect-ratio {
+	padding-bottom: 66.6666%;
+}
+  
+.ouv-ar-11 .ou-aspect-ratio {
+	padding-bottom: 100%;
+}
+  
+.ou-aspect-ratio {
+	position: relative;
+	height: 0;
+	background: none;
+}
+.ou-aspect-ratio iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	border: 0;
+	background-color: transparent;
+}
+.ou-aspect-ratio video {
+	width: 100%;
+}
+
+.ou-video-wrapper:not(.oxy-inner-content) {
+	background: #000;
+	overflow: hidden;
+}
+
+.ou-video-wrapper video,
+.ou-video-wrapper iframe {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    line-height: 1;
+    border: none;
+}
+.ou-video-wrapper .ou-video-player {
+	-o-object-fit: cover;
+    object-fit: cover;
+}
+
+.ou-video-wrapper .ou-screen-only {
+	position: absolute;
+    top: -10000em;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.oxy-ou-video {
+	display: inline-block;
+    width: 100%;
+    margin: 0;
+    min-height: 40px;
+
+    --lightbox-bg: #1e1e1e;
+    --lightbox-opacity: 0.87;
+}
+
+.ou-video-wrapper:not(.oxy-inner-content) .ou-video-image-overlay {
+	text-align: center;
+}
+
+.ou-video-image-overlay {
+	position: relative;
+	cursor: pointer;
+}
+.ou-video-wrapper:not(.ou-video-lightbox) .ou-video-image-overlay {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 50%;
+}
+
+.ou-video-play-btn {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	display: inline-block;
+    line-height: 0;
+    padding: 20px;
+    border-radius: 100%;
+	background: #fff;
+	cursor: pointer;
+}
+
+.ou-video-play-btn svg {
+	width: 30px;
+    height: 30px;
+    transform: translateX(3px);
+}
+
+.ou-video-play-btn i {
+	font-size: 100px;
+    color: #fff;
+    opacity: 0.8;
+    text-shadow: 1px 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.fancybox-container .ou-video-container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.fancybox-content > button.fancybox-close-small {
+	display: none!important;
+}
+
+.fancybox-content .ou-aspect-ratio .fancybox-close-small {
+	color: #fff;
+	background-color: #333;
+	border-radius: 50%;
+	top: -24px;
+	right: -22px;
+}
+
+.fancybox-content .ou-aspect-ratio .fancybox-close-small svg,
+.fancybox-content .ou-aspect-ratio .fancybox-close-small:hover svg {
+	fill: currentColor;
+}
+
+.fancybox-content .ou-aspect-ratio {
+	background: rgba(125,125,125,0.5);
+}
+
+.fancybox-container .ou-video-container {
+	width: 95%;
+}
+
+.fancybox-is-open .fancybox-content {
+	background: transparent!important;
+	height: 100%;
+	overflow: hidden;
+	padding: 0;
+}
+
+/*.fancybox-is-open .fancybox-bg.ouv-backdrop {
+	background: var(--lightbox-bg)!important;
+}
+
+.fancybox-is-open .fancybox-bg.ouv-backdrop {
+	opacity: var(--lightbox-opacity)!important; 
+}*/
+
+@media only screen and (min-width: 1025px) {
+	.fancybox-is-open .fancybox-content {
+		width: 75%;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.fancybox-is-open .fancybox-content {
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 920px) {
+	.fancybox-is-open .fancybox-content {
+		width: 99%;
+	}
+}
