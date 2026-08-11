@@ -20,13 +20,12 @@ function initNav() {
   toggle.addEventListener('click', () => {
     const open = links.classList.toggle('open');
     toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-    document.body.style.overflow = open ? 'hidden' : '';
   });
 
   links.querySelectorAll('a').forEach((a) => {
     a.addEventListener('click', () => {
       links.classList.remove('open');
-      document.body.style.overflow = '';
+      toggle.setAttribute('aria-expanded', 'false');
     });
   });
 }
