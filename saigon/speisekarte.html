@@ -1,0 +1,622 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Speisekarte — Saigon Bistro Langenfeld</title>
+<meta name="description" content="Die komplette Speisekarte des Saigon Bistro Langenfeld: Vorspeisen, Pho, Wok-Gerichte, Currys, Kindergerichte, Beilagen, Desserts und Getränke. Filterbar nach Vorspeisen, Vegetarisch, Vegan und Fleischsorte.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="images/logo.webp" type="image/webp">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="brand">
+      <img src="images/logo.webp" alt="Saigon Bistro Logo">
+      <span class="brand-text">Saigon Bistro<small>Langenfeld</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Startseite</a>
+      <a href="speisekarte.html" class="active">Speisekarte</a>
+      <a href="anfahrt.html">Anfahrt</a>
+    </div>
+    <div class="nav-cta">
+      <a href="tel:021732034488" class="btn btn-call">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3h4l2 5-2.5 1.5a11 11 0 005 5L16 12l5 2v4a2 2 0 01-2 2C9.5 20 4 14.5 4 5a2 2 0 012-2z"/></svg>
+        <span class="btn-call-num">02173 2034488</span>
+      </a>
+      <a href="index.html#reservierung" class="btn btn-primary">Tisch reservieren</a>
+      <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="kicker">Speisekarte</p>
+      <h1>Von Vorspeise bis Dessert.</h1>
+      <p>Alle Hauptgerichte servieren wir wahlweise mit Hühnerfleisch, knuspriger Hühnerbrustfilet, Rindfleisch,
+        Ente kross, Garnelen, Gemüse, Tofu oder knuspriger Sesam-Ente (vegan). Alle Gerichte werden mit Jasminreis
+        serviert, sofern nicht anders angegeben.</p>
+    </div>
+  </section>
+
+  <div class="filter-bar" data-filter-bar>
+    <div class="container">
+      <div class="filter-scroll">
+        <button class="chip active" data-filter="alle">Alle Gerichte</button>
+        <button class="chip" data-filter="vorspeisen">Vorspeisen</button>
+        <button class="chip" data-filter="suppen">Suppen &amp; Pho</button>
+        <button class="chip" data-filter="wok">Wok &amp; Nudeln</button>
+        <button class="chip" data-filter="curry">Currys &amp; Spezialitäten</button>
+        <button class="chip" data-filter="kinder">Kindergerichte</button>
+        <span class="divider" style="width:1px; height:24px; background:var(--line-strong); align-self:center;"></span>
+        <button class="chip" data-filter="vegetarisch"><span class="dot"></span>Vegetarisch</button>
+        <button class="chip" data-filter="vegan"><span class="dot"></span>Vegan</button>
+        <button class="chip" data-filter="huhn"><span class="dot"></span>Hühnerfleisch</button>
+        <button class="chip" data-filter="rind"><span class="dot"></span>Rindfleisch</button>
+        <button class="chip" data-filter="ente"><span class="dot"></span>Ente</button>
+        <button class="chip" data-filter="garnelen"><span class="dot"></span>Garnelen</button>
+      </div>
+    </div>
+  </div>
+
+  <section style="padding-top:56px;">
+    <div class="container">
+
+      <div class="empty-state" data-empty-state>
+        <p>Für diese Auswahl haben wir aktuell kein Gericht — probieren Sie einen anderen Filter.</p>
+      </div>
+
+      <!-- ============================= VORSPEISEN ============================= -->
+      <div class="menu-category" data-menu-category>
+        <div class="menu-category-head"><h2>Vorspeisen</h2></div>
+        <p class="menu-category-note">Kennzeichnungen: A Gluten (Weizen), B Krebstiere, C Ei, F Soja, G Milch — vollständige Zusatzstoffliste am Ende der Seite.</p>
+        <div class="menu-grid">
+
+          <article class="dish" data-tags="vorspeisen huhn">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">1.</span>Sauer-Scharf Suppe
+                <span class="dish-icons"><svg class="chili" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2 3-1 4-1 7a4 4 0 004 4c2 0 3-1.5 3-3 2 2 2 6-1 8-3 2-8 2-11-1-3-3-2-9 2-12 1.5-1.1 3-2 4-3z"/></svg></span>
+              </div>
+              <div class="dish-price">3,50€</div>
+            </div>
+            <p class="dish-desc">Chinesische Hühnersuppe mit Eiern, Karotten, Bambus, Pilzen und Sauerkraut.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen huhn garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">2.</span>Suppe Canh Chua Saigon Gemüse</div>
+            </div>
+            <p class="dish-desc">Mit Champignons, Mini-Tomaten &amp; Kräutern (Tom-Yam-Gung-Suppe).</p>
+            <div class="protein-table">
+              <div class="row"><span>Hühnerfleisch</span><span>4,50€</span></div>
+              <div class="row"><span>Garnelen</span><span>5,00€</span></div>
+              <div class="row"><span>Vegan Tofu</span><span>5,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">3.</span>Wantan Suppe</div>
+              <div class="dish-price">5,00€</div>
+            </div>
+            <p class="dish-desc">Pak Choi, Champignons.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen huhn garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">4.</span>Suppe Sua Dua</div>
+            </div>
+            <p class="dish-desc">Kokosmilchsuppe mit Kräutern &amp; Kokos.</p>
+            <div class="protein-table">
+              <div class="row"><span>Hühnerfleisch</span><span>5,00€</span></div>
+              <div class="row"><span>Garnelen</span><span>5,50€</span></div>
+              <div class="row"><span>Vegan Tofu</span><span>5,50€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen vegetarisch vegan">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">5.</span>Saigon Salat
+                <span class="dish-icons"><svg class="leaf" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M4 20c8 0 16-6 16-16C10 4 4 12 4 20z"/></svg></span>
+              </div>
+              <div class="dish-price">5,00€</div>
+            </div>
+            <p class="dish-desc">Gurken, Eisbergsalat, Rucola, Minze, Möhren mit Dressing.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen huhn garnelen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">6.</span>Ha Noi Rolls</div>
+              <div class="dish-price">5,50€</div>
+            </div>
+            <p class="dish-desc">Frühlingsrollen (2 Stk.) — Gold-gebackene Reispapierrollen gefüllt mit Hühnerfleisch,
+              gehackten Garnelen, Ei, Glasnudeln, Gemüse &amp; Morcheln. Limetten-Fisch-Sauce.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen huhn garnelen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">7.</span>Wantan Gebacken</div>
+              <div class="dish-price">5,50€</div>
+            </div>
+            <p class="dish-desc">5 Stück — Gold-gebackene Teigtaschen gefüllt mit Hühnerfleisch und Garnelen, süßer Chili-Dip.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen huhn garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">8.</span>Nem Cuon Saigon</div>
+            </div>
+            <p class="dish-desc">Sommerrollen (2 Stk.).</p>
+            <div class="protein-table">
+              <div class="row"><span>Hühnerfleisch</span><span>5,00€</span></div>
+              <div class="row"><span>Garnelen</span><span>6,00€</span></div>
+              <div class="row"><span>Tofu</span><span>5,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">9.</span>Minirollen <span style="color:var(--muted); font-weight:400; font-size:.8rem;">(Vegetarisch)</span></div>
+              <div class="dish-price">4,80€</div>
+            </div>
+            <p class="dish-desc">6 Stück.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">10.</span>Edamame</div>
+              <div class="dish-price">5,00€</div>
+            </div>
+            <p class="dish-desc">Gedämpfte japanische Sojabohnen.</p>
+          </article>
+
+          <article class="dish" data-tags="vorspeisen garnelen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">11.</span>Garnelen paniert</div>
+              <div class="dish-price">6,00€</div>
+            </div>
+            <p class="dish-desc">4 Stück, mit süß-saurer Soße.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ============================= SUPPEN & PHO ============================= -->
+      <div class="menu-category" data-menu-category>
+        <div class="menu-category-head"><h2>Suppen &amp; Pho</h2></div>
+        <p class="menu-category-note">Herzhafte Reisbandnudelsuppe mit traditioneller 5-Kräuter-Brühe.</p>
+        <div class="menu-grid">
+
+          <article class="dish" data-tags="suppen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">14.</span>Pho Chay</div>
+              <div class="dish-price">12,50€</div>
+            </div>
+            <p class="dish-desc">Mit Pakchoi, Pilzen, Tofu, Frühlingszwiebeln &amp; Kräutern.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen huhn">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">15.</span>Pho Ga</div>
+              <div class="dish-price">12,50€</div>
+            </div>
+            <p class="dish-desc">Mit Hühnerbrust, verfeinert mit Frühlingszwiebeln &amp; Kräutern.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen rind">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">16.</span>Pho Bo</div>
+              <div class="dish-price">13,50€</div>
+            </div>
+            <p class="dish-desc">Mit Rindfleisch &amp; Kräutern.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen rind">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">17.</span>Pho Dac Biet</div>
+              <div class="dish-price">15,00€</div>
+            </div>
+            <p class="dish-desc">Mit Rindfleisch, durchgekocht, zart, würfelförmig geschnitten.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen rind">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">18.</span>Bun Bo Nam Bo <span style="color:var(--muted); font-weight:400; font-size:.8rem;">(lauwarm)</span></div>
+              <div class="dish-price">13,50€</div>
+            </div>
+            <p class="dish-desc">Mariniertes Rindfleisch, wok-geschwenkt mit Zitronengras, serviert mit Reisnudeln,
+              Salatmix, Kräutern, Erdnüssen &amp; Limetten-Fisch-Sauce.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">19.</span>Bun Nem Ha Noi <span style="color:var(--muted); font-weight:400; font-size:.8rem;">(lauwarm)</span></div>
+              <div class="dish-price">13,50€</div>
+            </div>
+            <p class="dish-desc">3 Stück — Reisnudeln, Kräutersalat, gehackte Erdnüsse, Röstzwiebeln &amp; hausgemachte Fisch-Sauce.</p>
+          </article>
+
+          <article class="dish" data-tags="suppen huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">20.</span>Pho Tron <span style="color:var(--muted); font-weight:400; font-size:.8rem;">(lauwarm)</span></div>
+            </div>
+            <p class="dish-desc">Reisnudelsuppe mit gemischtem Salat, Kräutern, Röstzwiebeln, gerösteten Erdnüssen,
+              übergossen mit Saigon-Spezial-Vinaigrette. Wahlweise dazu:</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ============================= WOK & NUDELN ============================= -->
+      <div class="menu-category" data-menu-category>
+        <div class="menu-category-head"><h2>Wok &amp; Nudeln</h2></div>
+        <p class="menu-category-note">Alle Wok-Gerichte wahlweise mit Hühnerfleisch, knuspriger Hühnerbrustfilet, Rindfleisch, Ente kross, Garnelen, Gemüse, Tofu, veganer Sesam-Ente oder panierten Garnelen.</p>
+        <div class="menu-grid">
+
+          <article class="dish" data-tags="wok huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">21.</span>Pho Xao</div></div>
+            <p class="dish-desc">Gebratene Reisbandnudeln mit asiatischem Gemüse, Pak Choi, Koriander, Ei, Schnittlauch &amp; Röstzwiebeln.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="wok huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">23.</span>Mien Xao</div></div>
+            <p class="dish-desc">Gebratene Glasnudeln mit verschiedenem Gemüse, Sojasprossen &amp; Sesam.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="wok huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">24.</span>Udon Xao</div></div>
+            <p class="dish-desc">Udon-Nudeln mit Gemüse, Pakchoi, Paprika &amp; Knoblauch in dunkler Soße, Sesam.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="wok huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">36.</span>Com Rang</div></div>
+            <p class="dish-desc">Gebratener Reis mit Ei und Gemüse.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>11,50€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>12,50€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>13,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>13,50€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>13,50€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>9,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>12,50€</span></div>
+              <div class="row"><span>V. Tofu</span><span>11,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>13,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="wok huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">37.</span>My Xao</div></div>
+            <p class="dish-desc">Gebratene Nudeln mit Ei und Gemüse.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>10,50€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>11,50€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>12,50€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>12,50€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>8,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>11,50€</span></div>
+              <div class="row"><span>V. Tofu</span><span>10,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>12,00€</span></div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ============================= CURRYS & SPEZIALGERICHTE ============================= -->
+      <div class="menu-category" data-menu-category>
+        <div class="menu-category-head"><h2>Currys &amp; Spezialgerichte</h2></div>
+        <p class="menu-category-note">Alle Gerichte werden mit Jasminreis serviert.</p>
+        <div class="menu-grid">
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">30.</span>Rotes Curry</div></div>
+            <p class="dish-desc">Rote Curry-Kokosmilchsauce mit Saisongemüse, Auberginen, Champignons, Paprika &amp; Basilikum.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">31.</span>Grün Curry
+                <span class="dish-icons"><svg class="chili" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2 3-1 4-1 7a4 4 0 004 4c2 0 3-1.5 3-3 2 2 2 6-1 8-3 2-8 2-11-1-3-3-2-9 2-12 1.5-1.1 3-2 4-3z"/></svg></span>
+              </div>
+            </div>
+            <p class="dish-desc">Grüne Curry-Kokosmilchsauce mit Saisongemüse, Auberginen, Paprika &amp; Basilikum.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">32.</span>Erdnuss Curry</div></div>
+            <p class="dish-desc">Erdnuss-Kokosmilchsauce mit Saisongemüse, Champignons &amp; Paprika.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">33.</span>Mango</div></div>
+            <p class="dish-desc">Mango-Kokosmilchsauce mit Saisongemüse, Champignons &amp; Paprika.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top"><div class="dish-name"><span class="num">34.</span>Süß-Sauer</div></div>
+            <p class="dish-desc">Ananas, Paprika, Karotten und hausgemachte Süß-Sauer-Soße.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen vegan vegetarisch">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">35.</span>Knoblauch – Leicht Scharf
+                <span class="dish-icons"><svg class="chili" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2 3-1 4-1 7a4 4 0 004 4c2 0 3-1.5 3-3 2 2 2 6-1 8-3 2-8 2-11-1-3-3-2-9 2-12 1.5-1.1 3-2 4-3z"/></svg></span>
+              </div>
+            </div>
+            <p class="dish-desc">Soja-Knoblauchsauce gebraten mit Saisongemüse, Champignons, Paprika, Chili &amp; Zwiebeln.</p>
+            <div class="protein-table">
+              <div class="row"><span>A. Hühnerfleisch</span><span>12,00€</span></div>
+              <div class="row"><span>B. Knuspr. Hühnerbrustfilet</span><span>13,00€</span></div>
+              <div class="row"><span>C. Rindfleisch</span><span>14,00€</span></div>
+              <div class="row"><span>D. Ente kross</span><span>14,00€</span></div>
+              <div class="row"><span>E. Garnelen</span><span>14,00€</span></div>
+              <div class="row"><span>G. Gemüse</span><span>10,00€</span></div>
+              <div class="row"><span>I. Vegan Sesam-Ente</span><span>13,00€</span></div>
+              <div class="row"><span>V. Tofu</span><span>12,00€</span></div>
+              <div class="row"><span>K. Paniert. Garnelen</span><span>14,00€</span></div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn rind ente garnelen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">38.</span>Saigon Special</div>
+              <div class="dish-price">18,00€</div>
+            </div>
+            <p class="dish-desc">Acht kostbare Zutaten, Knoblauchsauce gebraten: Hühnerfleisch, Rind, Garnelen, Ente kross &amp; Saigon-Gemüse, serviert mit Jasminreis.</p>
+          </article>
+
+          <article class="dish" data-tags="curry garnelen">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">39.</span>Gebratene scharfe Garnelen
+                <span class="dish-icons"><svg class="chili" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2c2 3-1 4-1 7a4 4 0 004 4c2 0 3-1.5 3-3 2 2 2 6-1 8-3 2-8 2-11-1-3-3-2-9 2-12 1.5-1.1 3-2 4-3z"/></svg></span>
+              </div>
+              <div class="dish-price">17,00€</div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry rind">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">40.</span>Gebratenes Rindfleisch mit Gemüse</div>
+              <div class="dish-price">17,00€</div>
+            </div>
+          </article>
+
+          <article class="dish" data-tags="curry huhn">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">41.</span>Ga Xao</div>
+              <div class="dish-price">16,00€</div>
+            </div>
+            <p class="dish-desc">Gebratenes Hähnchen Thai-Art mit Paprika, Bambus, Zwiebeln &amp; Basilikum.</p>
+          </article>
+
+          <article class="dish" data-tags="curry">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">42.</span>Chop Suey</div>
+              <div class="dish-price">16,00€</div>
+            </div>
+            <p class="dish-desc">Gemüse mit paniertem Fisch.</p>
+          </article>
+
+        </div>
+      </div>
+
+      <!-- ============================= KINDERGERICHTE ============================= -->
+      <div class="menu-category" data-menu-category>
+        <div class="menu-category-head"><h2>Kleine Kindergerichte</h2></div>
+        <div class="menu-grid">
+          <article class="dish" data-tags="kinder vegetarisch vegan">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">K1.</span>Pommes</div>
+              <div class="dish-price">4,00€</div>
+            </div>
+          </article>
+          <article class="dish" data-tags="kinder huhn">
+            <div class="dish-top">
+              <div class="dish-name"><span class="num">K2.</span>Pommes mit Nuggets</div>
+              <div class="dish-price">6,50€</div>
+            </div>
+          </article>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="container"><div class="divider"></div></div>
+
+  <!-- ============================= BEILAGEN / SAUCEN / DESSERTS / DRINKS — always visible reference list ============================= -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="kicker">Zum Dazubestellen</p>
+        <h2>Beilagen, Saucen, Desserts &amp; Getränke</h2>
+      </div>
+      <div class="grid-2 reveal-stagger">
+        <div>
+          <h3 style="font-size:1.1rem; margin-bottom:14px;">Beilagen</h3>
+          <div class="menu-simple-list">
+            <div class="row"><span>Gekochter Reis</span><span>2,00€</span></div>
+            <div class="row"><span>Gebratener Reis</span><span>4,00€</span></div>
+            <div class="row"><span>Gebratene Nudeln</span><span>4,00€</span></div>
+          </div>
+          <h3 style="font-size:1.1rem; margin:32px 0 14px;">Extra Saucen</h3>
+          <div class="menu-simple-list">
+            <div class="row"><span>Süß-Sauer</span><span>2,00€</span></div>
+            <div class="row"><span>Erdnuss Sauce</span><span>3,00€</span></div>
+            <div class="row"><span>Knoblauch mit Sojasauce</span><span>2,00€</span></div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:1.1rem; margin-bottom:14px;">Desserts</h3>
+          <div class="menu-simple-list">
+            <div class="row"><span>Gebackene Bananen mit Honig</span><span>4,00€</span></div>
+            <div class="row"><span>Gebratene Äpfel mit Honig</span><span>4,00€</span></div>
+            <div class="row"><span>Mochi Cake (versch. Sorten, 3 Stk.)</span><span>5,00€</span></div>
+          </div>
+          <h3 style="font-size:1.1rem; margin:32px 0 14px;">Getränke zum Mitnehmen</h3>
+          <div class="menu-simple-list">
+            <div class="row"><span>Asia-Getränke (Lychee, Mango, Guava) 0,25 l</span><span>3,00€</span></div>
+            <div class="row"><span>Cola, Wasser, Sprite, Fanta 1 l</span><span>4,00€</span></div>
+            <div class="row"><span>Bier (Krombacher oder Beck's) 0,5 l</span><span>2,50€</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="legend-box reveal">
+        <strong>Zusatzstoffe:</strong> 1 mit Farbstoff · 2 mit Süßstoffen · 3 chininhaltig · 4 koffeinhaltig ·
+        5 phenylalaninhaltig · 6 sulfithaltig · 8 konserviert.
+        <br><strong>Allergene:</strong> a Weizen (Gluten) · b Krebstiere · c Eier · d Fisch · f Soja · g Milch ·
+        j Senf · k Sesam.
+        <br>Fragen Sie uns jederzeit — wir informieren Sie gerne im Detail zu Zutaten und Allergenen. Preise
+        verstehen sich inkl. MwSt. und können sich ändern.
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <img src="images/logo.webp" alt="Saigon Bistro Logo">
+          <span>Saigon Bistro</span>
+        </div>
+        <p style="max-width:32ch;">Authentische vietnamesische Küche in Langenfeld (Rheinland) — frisch gekocht, herzlich serviert.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="index.html">Startseite</a></li>
+          <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="anfahrt.html">Anfahrt</a></li>
+          <li><a href="index.html#reservierung">Tisch reservieren</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontakt</h4>
+        <ul>
+          <li><span>Zum Stadion 71<br>40764 Langenfeld (Rheinland)</span></li>
+          <li><a href="mailto:info@saigon-bistro-langenfeld.de">info@saigon-bistro-langenfeld.de</a></li>
+          <li><span>Fax: 0800 202 07 702</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Saigon Bistro Langenfeld · Inh. Thi Thanh Tran</span>
+      <span>Vertretungsberechtigt: Thi Thanh Tran</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
