@@ -19,7 +19,16 @@
     </a>
     <div class="nav-links">
       <a href="index.html">Startseite</a>
-      <a href="speisekarte.html">Speisekarte</a>
+      <div class="nav-dropdown">
+        <button class="nav-dropdown-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+          Speisekarte
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="nav-dropdown-menu">
+          <a href="speisekarte.html">Komplette Karte</a>
+          <a href="mittagsangebote.html">Mittagsmenü</a>
+        </div>
+      </div>
       <a href="anfahrt.html" class="active">Anfahrt</a>
     </div>
     <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">
@@ -122,6 +131,7 @@
         <ul>
           <li><a href="index.html">Startseite</a></li>
           <li><a href="speisekarte.html">Speisekarte</a></li>
+          <li><a href="mittagsangebote.html">Mittagsmenü</a></li>
           <li><a href="anfahrt.html">Anfahrt</a></li>
           <li><a href="index.html#reservierung">Tisch reservieren</a></li>
         </ul>
@@ -136,8 +146,17 @@
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span data-year></span> Saigon Bistro Langenfeld · Inh. Thi Thanh Tran</span>
-      <span>Vertretungsberechtigt: Thi Thanh Tran</span>
+      <div class="footer-legal">
+        <span>© <span data-year></span> Saigon Bistro Langenfeld · Inh. Thi Thanh Tran</span>
+        <span>Vertretungsberechtigt: Thi Thanh Tran</span>
+      </div>
+      <div class="footer-credit">
+        <span class="footer-credit-label">Konzept &amp; Gestaltung</span>
+        <a href="https://baum-kubi.com" target="_blank" rel="noopener" class="footer-agency-link">
+          <span>Dr. Lisa Baum &amp; Dennis Kubitza</span>
+          <span class="footer-tagline">Marketing mit Köpfchen</span>
+        </a>
+      </div>
     </div>
   </div>
 </footer>

@@ -2,6 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   initNav();
+  initNavDropdown();
   initReveal();
   initSlider();
   initMenuFilters();
@@ -27,6 +28,28 @@ function initNav() {
       links.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+}
+
+/* ---------------------------------------------------------------------- */
+/* "Speisekarte" dropdown (Komplette Karte / Mittagsangebote)             */
+/* ---------------------------------------------------------------------- */
+function initNavDropdown() {
+  const dropdown = document.querySelector('.nav-dropdown');
+  const toggle = dropdown && dropdown.querySelector('.nav-dropdown-toggle');
+  if (!dropdown || !toggle) return;
+
+  toggle.addEventListener('click', (e) => {
+    e.preventDefault();
+    const open = dropdown.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (dropdown.classList.contains('open') && !dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
   });
 }
 
