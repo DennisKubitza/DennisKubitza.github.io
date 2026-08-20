@@ -6,7 +6,7 @@ ohne Build-Schritt und ohne Abhängigkeiten — kann direkt über GitHub Pages g
 ## Seiten
 
 - `index.html` — Startseite: Hero, Restaurant-Fotos, Google-Rezensionen, Bildergalerie (Slider) der
-  Gerichte **und Reservierungsformular** (`#reservierung`)
+  Gerichte **und Kontaktbereich** (`#kontakt`)
 - `speisekarte.html` — Vollständige, filterbare Speisekarte
 - `anfahrt.html` — Anfahrtsbeschreibung mit Karte
 
@@ -84,42 +84,11 @@ per direktem Link gezeigt werden, bevor sie öffentlich auffindbar wird. Dafür 
 in allen drei HTML-Dateien entfernen (oder auf `index, follow` ändern) und ggf. die `Disallow`-Zeile aus
 der (eigenen oder eingebundenen) `robots.txt` wieder streichen.
 
-## Reservierungsformular aktivieren (wichtig!)
-
-Die Seite ist rein statisch (kein eigener Server) — GitHub Pages kann daher keine Formulare selbst
-entgegennehmen. Das Formular unter `index.html#reservierung` ist deshalb für
-**[Formspree](https://formspree.io)** vorbereitet, einen kostenlosen Dienst, der Formular-Absendungen
-direkt per E-Mail zustellt (kostenloser Plan: 50 Absendungen/Monat, ausreichend für die meisten
-kleinen Restaurants).
-
-1. Kostenloses Konto auf [formspree.io](https://formspree.io) anlegen.
-2. Ein neues Formular erstellen und die Ziel-E-Mail-Adresse hinterlegen (z. B. die echte
-   Restaurant-E-Mail-Adresse).
-3. Formspree zeigt eine Endpunkt-URL wie `https://formspree.io/f/abcdEFGH` an.
-4. In `index.html` die Zeile
-
-   ```html
-   <form data-reservation-form data-fallback-email="info@saigon-bistro-langenfeld.de"
-         action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-   ```
-
-   anpassen: `YOUR_FORM_ID` durch die eigene Formspree-ID ersetzen.
-
-Solange kein echtes Formular hinterlegt ist, öffnet der "Reservierung anfragen"-Button automatisch
-das E-Mail-Programm des Besuchers mit den ausgefüllten Angaben (Fallback) — das Formular funktioniert
-also so oder so.
-
-**Wichtig:** Die im Footer und im Kontaktbereich verwendete Adresse `info@saigon-bistro-langenfeld.de`
-ist ein Platzhalter (im Chat wurde keine echte E-Mail-Adresse übergeben). Bitte in allen HTML-Dateien
-durch die tatsächliche E-Mail-Adresse des Bistros ersetzen (Suche nach `info@saigon-bistro-langenfeld.de`).
-
 ## Inhalte, die noch ergänzt werden sollten
 
-- **Echte E-Mail-Adresse** (aktuell Platzhalter, siehe oben)
 - **Öffnungszeiten** — wurden nicht bereitgestellt und sind daher bewusst nicht auf der Seite
   aufgeführt, um keine falschen Angaben zu machen. Am einfachsten in `index.html` im Bereich
   „Kontakt & Adresse" ergänzen.
-- **Telefonnummer** — bisher ist nur die Fax-Nummer (0800 202 07 702) bekannt.
 - Die Speisekarten-Preise wurden aus den gescannten Menükarten übertragen; bei mehreren Gerichten
   mit gleicher „wahlweise dazu"-Auswahl (Hühnerfleisch/Rind/Ente/Garnelen/Gemüse/Tofu/vegane
   Sesam-Ente) wurde die auf der Karte wiederkehrende Standard-Preistabelle verwendet. Bitte vor

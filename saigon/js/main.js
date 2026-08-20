@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initReveal();
   initSlider();
   initMenuFilters();
-  initReservationForm();
   initYear();
 });
 
@@ -180,87 +179,6 @@ function initMenuFilters() {
     });
 
     if (emptyState) emptyState.classList.toggle('show', visibleCount === 0);
-  }
-}
-
-/* ---------------------------------------------------------------------- */
-/* Reservation / contact form                                             */
-/*                                                                        */
-/* Ships wired for Formspree (https://formspree.io) — a free service      */
-/* that lets a static, backend-less site (like one hosted on GitHub       */
-/* Pages) receive form submissions by e-mail. See README.md for the       */
-/* two-minute setup. Until an endpoint is configured, submissions fall    */
-/* back to opening the visitor's e-mail client with the details pre-      */
-/* filled, so the form is always usable.                                  */
-/* ---------------------------------------------------------------------- */
-function initReservationForm() {
-  const form = document.querySelector('[data-reservation-form]');
-  if (!form) return;
-
-  const status = form.querySelector('[data-form-status]');
-  const submitBtn = form.querySelector('[type="submit"]');
-  const endpoint = form.getAttribute('action') || '';
-  const isConfigured = endpoint && !endpoint.includes('YOUR_FORM_ID');
-
-  form.addEventListener('submit', async (e) => {
-    e.preventDefault();
-
-    // honeypot spam trap
-    if (form.querySelector('.honeypot input')?.value) return;
-
-    const data = new FormData(form);
-
-    if (!isConfigured) {
-      openMailFallback(data);
-      return;
-    }
-
-    setStatus('Wird gesendet …', null);
-    submitBtn && (submitBtn.disabled = true);
-
-    try {
-      const res = await fetch(endpoint, {
-        method: 'POST',
-        headers: { Accept: 'application/json' },
-        body: data,
-      });
-      if (res.ok) {
-        setStatus('Vielen Dank! Ihre Reservierungsanfrage ist eingegangen — wir melden uns kurzfristig zur Bestätigung.', 'ok');
-        form.reset();
-      } else {
-        setStatus('Da ist etwas schiefgelaufen. Bitte versuchen Sie es erneut oder rufen Sie uns an.', 'err');
-      }
-    } catch (err) {
-      setStatus('Keine Verbindung möglich. Bitte versuchen Sie es erneut oder schreiben Sie uns per E-Mail.', 'err');
-    } finally {
-      submitBtn && (submitBtn.disabled = false);
-    }
-  });
-
-  function setStatus(message, kind) {
-    if (!status) return;
-    status.textContent = message;
-    status.classList.remove('ok', 'err');
-    if (kind) status.classList.add(kind);
-    status.classList.add('show');
-  }
-
-  function openMailFallback(data) {
-    const to = form.dataset.fallbackEmail || 'info@saigon-bistro-langenfeld.de';
-    const lines = [
-      `Name: ${data.get('name') || ''}`,
-      `E-Mail: ${data.get('email') || ''}`,
-      `Telefon: ${data.get('phone') || ''}`,
-      `Datum: ${data.get('date') || ''}`,
-      `Uhrzeit: ${data.get('time') || ''}`,
-      `Personen: ${data.get('guests') || ''}`,
-      '',
-      data.get('message') || '',
-    ];
-    const subject = encodeURIComponent('Tischreservierung Saigon Bistro');
-    const body = encodeURIComponent(lines.join('\n'));
-    window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
-    setStatus('Ihr E-Mail-Programm wird geöffnet, damit Sie die Anfrage direkt an uns senden können.', 'ok');
   }
 }
 
